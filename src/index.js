@@ -10,13 +10,6 @@ import Nav from './components/Nav'
 require('dotenv').config()
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state={
-      isBio: true
-    }
-  }
 
 
   render() {
