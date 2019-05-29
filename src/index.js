@@ -1,12 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import './css/index.css'
+import About from './components/About'
+import Hero from './components/Hero'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Nav from './components/Nav'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+require('dotenv').config()
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state={
+      isBio: true
+    }
+  }
+
+
+  render() {
+    return (
+      <div>
+        <Nav />
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
+    )
+  }
+};
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
