@@ -2,7 +2,7 @@
   "name": "megan-bailey-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://meganbailey.co/",
+  "homepage": "https://rockstarcreativestudio.github.io/Megan-Bailey-Portfolio/",
   "dependencies": {
     "emailjs-com": "^2.3.2",
     "gh-pages": "^2.0.1",
