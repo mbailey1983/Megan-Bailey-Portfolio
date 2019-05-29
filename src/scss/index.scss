@@ -144,7 +144,7 @@ p.project {
 section.hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/hero-bg.jpg");
+    url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg.jpg");
   @include background-image();
   width: 100%;
   height: 100vh;
@@ -161,7 +161,7 @@ section.hero {
   padding-top: 3%;
   background-image:
     linear-gradient(110deg, rgba(255,0,193, 0.3), rgba(0,0,0, 1) 60%),
-    url("../img/about-bg.jpg");
+    url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/about-bg.jpg");
   @include background-image();
 }
 
@@ -187,7 +187,7 @@ section.hero {
   height: 100vh;
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('../img/coding-1841550_1280.jpg');
+    url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/coding-1841550_1280.jpg');
   @include background-image();
 }
 
@@ -196,7 +196,7 @@ section.hero {
   height: 100vh;
   background-image:
     linear-gradient(rgba(131,22,193,0.6), rgba(131,22,193,0.6)),
-    url("../img/contact-bg.jpg");
+    url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/contact-bg.jpg");
   @include background-image();
   background-blend-mode: multiply;
 }
