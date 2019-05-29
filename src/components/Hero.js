@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../img/hero-bg.jpg'
 
 class Hero extends Component {
     render() {

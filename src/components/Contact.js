@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import * as emailjs from 'emailjs-com'
+import '../img/contact-bg.jpg'
 
 const rEmail = process.env.REACT_APP_EMAILJS_RECEIVER;
 const template = process.env.REACT_APP_EMAILJS_TEMPLATEID;

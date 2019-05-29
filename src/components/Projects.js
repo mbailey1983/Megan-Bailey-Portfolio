@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../img/coding-1841550_1280.jpg'
 
 class Projects extends Component {
 

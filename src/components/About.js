@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../img/about-bg.jpg'
 import AboutBio from './AboutBio'
 
 class About extends Component {
