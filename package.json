@@ -22,7 +22,7 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "watch": "sass --watch src/scss/index.scss:src/css/index.css",
+    "watch": "sass --watch src/scss/index.scss:public/css/index.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
