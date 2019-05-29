@@ -1,0 +1,412 @@
+@import url(https://fonts.googleapis.com/css?family=VT323&display=swap);
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden
+}
+/* Font Style */
+$code: 'VT323', monospace;
+
+/* Colors */
+$pink: #ff00c1;
+$bright-pink: #d500f9;
+
+
+/* Mixins */
+@mixin overlay() {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@mixin background-image() {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin transition-opacity() {
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+}
+
+/* Glitching Text from Isaac Doud - https://codepen.io/cipherbeta  */
+@mixin glitchCopy {
+  content: attr(data-text);
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch {
+position: relative;
+color: white;
+font-size: 4em;
+letter-spacing: .5em;
+flex: 0 1 auto;
+/* Animation provies a slight random skew. Check bottom of doc
+for more information on how to random skew. */
+animation: glitch-skew 1s infinite linear alternate-reverse;
+
+/* Creates a copy before our text. */
+&::before{
+  /* Duplicates our text with the mixin. */
+  @include glitchCopy;
+  /* Scoots text slightly to the left for the color offset. */
+  left: 2px;
+  /* // Creates the color 'shadow' that happens on the glitch. */
+  text-shadow: -2px 0 $pink;
+  /* Creates an initial clip for our glitch. This works in
+  a typical top,right,bottom,left fashion and creates a mask
+  to only show a certain part of the glitch at a time. */
+  clip: rect(44px, 450px, 56px, 0);
+  /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+  with an alternating animation to keep things fresh. */
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+/* // Creates a copy after our text. Note comments from ::before. */
+&::after {
+  @include glitchCopy;
+  left: -2px;
+  text-shadow: -2px 0 #00fff9, 2px 2px $pink;
+  animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+}
+
+/* Creates an animation with 20 steaps. For each step, it calculates
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-anim {
+$steps: 20;
+@for $i from 0 through $steps {
+  #{percentage($i*(1/$steps))} {
+    clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+    transform: skew((random(100) / 100) + deg);
+  }
+}
+}
+
+/* // Same deal, just duplicated for ultra randomness. */
+@keyframes glitch-anim2 {
+$steps: 20;
+@for $i from 0 through $steps {
+  #{percentage($i*(1/$steps))} {
+    clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+    transform: skew((random(100) / 100) + deg);
+  }
+}
+}
+
+/* // Does the same deal as before, but now only skews. Used for main text. */
+@keyframes glitch-skew {
+$steps: 10;
+@for $i from 0 through $steps {
+  #{percentage($i*(1/$steps))} {
+    transform: skew((random(10) - 5) + deg);
+  }
+}
+}
+
+// Typography
+
+h2, h3 {
+  font-family: $code;
+  letter-spacing: 0.5em;
+  font-weight: 600 !important;
+}
+
+p {
+  font-family: $code;
+  color: white !important;
+  line-height: 1.1em;
+  font-size: 1.5em;
+}
+
+p.project {
+  font-size: 1.3em;
+}
+
+.section-title {
+  padding: 3% 0;
+}
+
+// Layout & Section Styling
+
+section.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/hero-bg.jpg");
+  @include background-image();
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding-top: 3%;
+  background-image:
+    linear-gradient(110deg, rgba(255,0,193, 0.3), rgba(0,0,0, 1) 60%),
+    url("../img/about-bg.jpg");
+  @include background-image();
+}
+
+.right-sidebar {
+  top: 35%;
+  right: 2%;
+  position: fixed;
+  z-index: 999;
+  background: rgba(0,0,0,0);
+}
+
+#menu {
+  top: 10%;
+  margin-right:  !important;
+}
+
+.right-sidebar li {
+  padding-bottom: 40%;
+}
+
+.projects {
+  width: 100%;
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('../img/coding-1841550_1280.jpg');
+  @include background-image();
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-image:
+    linear-gradient(rgba(131,22,193,0.6), rgba(131,22,193,0.6)),
+    url("../img/contact-bg.jpg");
+  @include background-image();
+  background-blend-mode: multiply;
+}
+
+.bio-icon:hover {
+  color: $bright-pink;
+}
+
+// Glitch Fade In/Out Bio
+
+@keyframes glitchout {
+  0% {
+   text-shadow: none;
+ opacity: 1;
+  }
+  5% {
+    text-shadow: -1.5px -1.5px 0 #0ff, 2px 2px 0 $pink;
+  }
+  15% {
+   text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 $pink;
+  }
+  23% {
+   text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 $pink;
+  }
+  35% {
+   text-shadow: 2px 2px 0 #0ff, -1.5px -1px 0 $pink;
+  }
+  48% {
+   text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 $pink;
+  }
+  57% {
+   text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 $pink;
+  }
+  63% {
+   text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 $pink;
+  }
+  75% {
+   text-shadow: -1px 1.5px 0 #0ff, 1.5px -3px 0 $pink;
+  }
+  87% {
+   text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 $pink;
+ opacity:0.8;
+  }
+  95% {
+   text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 $pink;
+  }
+  100% {
+ text-shadow: none;
+   opacity: 0;
+  }
+ }
+
+ @keyframes glitchin {
+  0% {
+    text-shadow: none;
+  opacity: 0;
+   }
+   5% {
+    text-shadow: -1.5px -1.5px 0 #0ff, 2px 2px 0 $pink;
+   }
+   15% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #f00;
+   }
+   23% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 $pink;
+    opacity: 0.15;
+   }
+   35% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1px 0 $pink;
+   }
+   48% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 $pink;
+   }
+   57% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 $pink;
+   }
+   63% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 $pink;
+   }
+   75% {
+    text-shadow: -1px 1.5px 0 #0ff, 1.5px -3px 0 $pink;
+   }
+   87% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 $pink;
+  opacity:0.8;
+   }
+   95% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 $pink;
+   }
+   100% {
+  text-shadow: none;
+    opacity: 1;
+   }
+  }
+
+
+#bio.glitchin {
+  animation: glitchin 0.9s linear 1s both;
+}
+
+#bio.glitchout {
+  animation: glitchout 0.5s linear both;
+}
+
+// Slide In/Out Skills
+
+#skills {
+  position: absolute;
+  width: 50vw;
+  transform: translatex(-35vh);
+}
+
+#skills.glitch-in {
+  animation: glitchin 0.5s linear 1s both;
+}
+
+#skills.glitch-out {
+  animation: glitchout 0.5s linear both;
+}
+
+// Forms Styling
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.textfield {
+  margin-left: 5%;
+}
+
+ /* label color */
+ .input-field label {
+  color: #ffffff;
+  padding-left: 1%;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: $bright-pink !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 3px solid $bright-pink !important;
+  color: #fff;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* label focus color */
+.input-field textarea:focus + label {
+  color: $bright-pink !important;
+}
+/* label underline focus color */
+.input-field textarea:focus {
+  border-bottom: 3px solid $bright-pink !important;
+  color: #fff;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+.input-field input[type=text], .input-field textarea {
+  background-color: rgba(116, 116, 116, 0.3);
+  color: #fff;
+}
+
+.sendbtn {
+  width: 25%;
+  margin-left:3%;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.message-alert {
+  position: fixed;
+  top: 75vh;
+  z-index: 9999;
+  min-width: 80%;
+  @include transition-opacity();
+  opacity: 1;
+  transition-delay: 3s;
+}
+
+.message-success, .message-error {
+  text-align: center;
+  padding: 10px 3% !important;
+  font-size: 1.3em !important;
+  min-height: 50px;
+  min-width: 70%;
+}
+
+.message-error {
+  background-color: #ef9a9a;
+}
+
+.message-success {
+  background-color: #80cbc4;
+}
+
+.message-alert.fade-out {
+  opacity: 0;
+}
+
+// Tabs Styling
+li.tab {
+  width: 20%;
+}
+
+.tabs .tab a {
+  color: $bright-pink !important;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.tabs .indicator {
+  background-color: $bright-pink !important;
+}

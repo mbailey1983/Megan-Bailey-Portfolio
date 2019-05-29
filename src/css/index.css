@@ -1,0 +1,556 @@
+@import url(https://fonts.googleapis.com/css?family=VT323&display=swap);
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Font Style */
+/* Colors */
+/* Mixins */
+/* Glitching Text from Isaac Doud - https://codepen.io/cipherbeta  */
+.glitch {
+  position: relative;
+  color: white;
+  font-size: 4em;
+  letter-spacing: 0.5em;
+  flex: 0 1 auto;
+  /* Animation provies a slight random skew. Check bottom of doc
+  for more information on how to random skew. */
+  animation: glitch-skew 1s infinite linear alternate-reverse;
+  /* Creates a copy before our text. */
+  /* // Creates a copy after our text. Note comments from ::before. */
+}
+.glitch::before {
+  /* Duplicates our text with the mixin. */
+  content: attr(data-text);
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Scoots text slightly to the left for the color offset. */
+  left: 2px;
+  /* // Creates the color 'shadow' that happens on the glitch. */
+  text-shadow: -2px 0 #ff00c1;
+  /* Creates an initial clip for our glitch. This works in
+  a typical top,right,bottom,left fashion and creates a mask
+  to only show a certain part of the glitch at a time. */
+  clip: rect(44px, 450px, 56px, 0);
+  /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+  with an alternating animation to keep things fresh. */
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  left: -2px;
+  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+  animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+/* Creates an animation with 20 steaps. For each step, it calculates
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-anim {
+  0% {
+    clip: rect(100px, 9999px, 30px, 0);
+    transform: skew(0.19deg);
+  }
+  5% {
+    clip: rect(98px, 9999px, 68px, 0);
+    transform: skew(0.45deg);
+  }
+  10% {
+    clip: rect(45px, 9999px, 91px, 0);
+    transform: skew(0.82deg);
+  }
+  15% {
+    clip: rect(86px, 9999px, 97px, 0);
+    transform: skew(0.42deg);
+  }
+  20% {
+    clip: rect(67px, 9999px, 50px, 0);
+    transform: skew(0.84deg);
+  }
+  25% {
+    clip: rect(69px, 9999px, 97px, 0);
+    transform: skew(0.4deg);
+  }
+  30% {
+    clip: rect(46px, 9999px, 17px, 0);
+    transform: skew(0.19deg);
+  }
+  35% {
+    clip: rect(16px, 9999px, 21px, 0);
+    transform: skew(0.16deg);
+  }
+  40% {
+    clip: rect(10px, 9999px, 51px, 0);
+    transform: skew(0.18deg);
+  }
+  45% {
+    clip: rect(90px, 9999px, 93px, 0);
+    transform: skew(0.08deg);
+  }
+  50% {
+    clip: rect(86px, 9999px, 34px, 0);
+    transform: skew(0.39deg);
+  }
+  55% {
+    clip: rect(53px, 9999px, 77px, 0);
+    transform: skew(0.07deg);
+  }
+  60% {
+    clip: rect(21px, 9999px, 81px, 0);
+    transform: skew(0.59deg);
+  }
+  65% {
+    clip: rect(98px, 9999px, 47px, 0);
+    transform: skew(0.85deg);
+  }
+  70% {
+    clip: rect(49px, 9999px, 67px, 0);
+    transform: skew(0.93deg);
+  }
+  75% {
+    clip: rect(54px, 9999px, 78px, 0);
+    transform: skew(0.19deg);
+  }
+  80% {
+    clip: rect(73px, 9999px, 56px, 0);
+    transform: skew(0.73deg);
+  }
+  85% {
+    clip: rect(42px, 9999px, 45px, 0);
+    transform: skew(0.74deg);
+  }
+  90% {
+    clip: rect(53px, 9999px, 55px, 0);
+    transform: skew(0.73deg);
+  }
+  95% {
+    clip: rect(44px, 9999px, 21px, 0);
+    transform: skew(0.46deg);
+  }
+  100% {
+    clip: rect(97px, 9999px, 70px, 0);
+    transform: skew(0.94deg);
+  }
+}
+/* // Same deal, just duplicated for ultra randomness. */
+@keyframes glitch-anim2 {
+  0% {
+    clip: rect(89px, 9999px, 46px, 0);
+    transform: skew(0.56deg);
+  }
+  5% {
+    clip: rect(68px, 9999px, 99px, 0);
+    transform: skew(0.56deg);
+  }
+  10% {
+    clip: rect(92px, 9999px, 49px, 0);
+    transform: skew(0.59deg);
+  }
+  15% {
+    clip: rect(7px, 9999px, 30px, 0);
+    transform: skew(0.68deg);
+  }
+  20% {
+    clip: rect(7px, 9999px, 95px, 0);
+    transform: skew(0.01deg);
+  }
+  25% {
+    clip: rect(20px, 9999px, 68px, 0);
+    transform: skew(0.71deg);
+  }
+  30% {
+    clip: rect(49px, 9999px, 18px, 0);
+    transform: skew(0.59deg);
+  }
+  35% {
+    clip: rect(85px, 9999px, 78px, 0);
+    transform: skew(0.6deg);
+  }
+  40% {
+    clip: rect(35px, 9999px, 82px, 0);
+    transform: skew(0.83deg);
+  }
+  45% {
+    clip: rect(64px, 9999px, 74px, 0);
+    transform: skew(0.06deg);
+  }
+  50% {
+    clip: rect(37px, 9999px, 30px, 0);
+    transform: skew(0.97deg);
+  }
+  55% {
+    clip: rect(34px, 9999px, 26px, 0);
+    transform: skew(0.38deg);
+  }
+  60% {
+    clip: rect(19px, 9999px, 13px, 0);
+    transform: skew(0.6deg);
+  }
+  65% {
+    clip: rect(41px, 9999px, 4px, 0);
+    transform: skew(0.38deg);
+  }
+  70% {
+    clip: rect(47px, 9999px, 18px, 0);
+    transform: skew(0.67deg);
+  }
+  75% {
+    clip: rect(90px, 9999px, 32px, 0);
+    transform: skew(0.36deg);
+  }
+  80% {
+    clip: rect(20px, 9999px, 67px, 0);
+    transform: skew(0.96deg);
+  }
+  85% {
+    clip: rect(39px, 9999px, 77px, 0);
+    transform: skew(0.72deg);
+  }
+  90% {
+    clip: rect(71px, 9999px, 13px, 0);
+    transform: skew(0.13deg);
+  }
+  95% {
+    clip: rect(19px, 9999px, 43px, 0);
+    transform: skew(0.02deg);
+  }
+  100% {
+    clip: rect(8px, 9999px, 36px, 0);
+    transform: skew(0.04deg);
+  }
+}
+/* // Does the same deal as before, but now only skews. Used for main text. */
+@keyframes glitch-skew {
+  0% {
+    transform: skew(5deg);
+  }
+  10% {
+    transform: skew(5deg);
+  }
+  20% {
+    transform: skew(-4deg);
+  }
+  30% {
+    transform: skew(5deg);
+  }
+  40% {
+    transform: skew(1deg);
+  }
+  50% {
+    transform: skew(-2deg);
+  }
+  60% {
+    transform: skew(-3deg);
+  }
+  70% {
+    transform: skew(-3deg);
+  }
+  80% {
+    transform: skew(-1deg);
+  }
+  90% {
+    transform: skew(3deg);
+  }
+  100% {
+    transform: skew(-2deg);
+  }
+}
+h2, h3 {
+  font-family: "VT323", monospace;
+  letter-spacing: 0.5em;
+  font-weight: 600 !important;
+}
+
+p {
+  font-family: "VT323", monospace;
+  color: white !important;
+  line-height: 1.1em;
+  font-size: 1.5em;
+}
+
+p.project {
+  font-size: 1.3em;
+}
+
+.section-title {
+  padding: 3% 0;
+}
+
+section.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding-top: 3%;
+  background-image: linear-gradient(110deg, rgba(255, 0, 193, 0.3), black 60%), url("../img/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.right-sidebar {
+  top: 35%;
+  right: 2%;
+  position: fixed;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0);
+}
+
+#menu {
+  top: 10%;
+  margin-right: !important;
+}
+
+.right-sidebar li {
+  padding-bottom: 40%;
+}
+
+.projects {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/coding-1841550_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(131, 22, 193, 0.6), rgba(131, 22, 193, 0.6)), url("../img/contact-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.bio-icon:hover {
+  color: #d500f9;
+}
+
+@keyframes glitchout {
+  0% {
+    text-shadow: none;
+    opacity: 1;
+  }
+  5% {
+    text-shadow: -1.5px -1.5px 0 #0ff, 2px 2px 0 #ff00c1;
+  }
+  15% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #ff00c1;
+  }
+  23% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #ff00c1;
+  }
+  35% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1px 0 #ff00c1;
+  }
+  48% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #ff00c1;
+  }
+  57% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #ff00c1;
+  }
+  63% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #ff00c1;
+  }
+  75% {
+    text-shadow: -1px 1.5px 0 #0ff, 1.5px -3px 0 #ff00c1;
+  }
+  87% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #ff00c1;
+    opacity: 0.8;
+  }
+  95% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #ff00c1;
+  }
+  100% {
+    text-shadow: none;
+    opacity: 0;
+  }
+}
+@keyframes glitchin {
+  0% {
+    text-shadow: none;
+    opacity: 0;
+  }
+  5% {
+    text-shadow: -1.5px -1.5px 0 #0ff, 2px 2px 0 #ff00c1;
+  }
+  15% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #f00;
+  }
+  23% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #ff00c1;
+    opacity: 0.15;
+  }
+  35% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1px 0 #ff00c1;
+  }
+  48% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #ff00c1;
+  }
+  57% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #ff00c1;
+  }
+  63% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #ff00c1;
+  }
+  75% {
+    text-shadow: -1px 1.5px 0 #0ff, 1.5px -3px 0 #ff00c1;
+  }
+  87% {
+    text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #ff00c1;
+    opacity: 0.8;
+  }
+  95% {
+    text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #ff00c1;
+  }
+  100% {
+    text-shadow: none;
+    opacity: 1;
+  }
+}
+#bio.glitchin {
+  animation: glitchin 0.9s linear 1s both;
+}
+
+#bio.glitchout {
+  animation: glitchout 0.5s linear both;
+}
+
+#skills {
+  position: absolute;
+  width: 50vw;
+  transform: translatex(-35vh);
+}
+
+#skills.glitch-in {
+  animation: glitchin 0.5s linear 1s both;
+}
+
+#skills.glitch-out {
+  animation: glitchout 0.5s linear both;
+}
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.textfield {
+  margin-left: 5%;
+}
+
+/* label color */
+.input-field label {
+  color: #ffffff;
+  padding-left: 1%;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #d500f9 !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 3px solid #d500f9 !important;
+  color: #fff;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* label focus color */
+.input-field textarea:focus + label {
+  color: #d500f9 !important;
+}
+
+/* label underline focus color */
+.input-field textarea:focus {
+  border-bottom: 3px solid #d500f9 !important;
+  color: #fff;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+.input-field input[type=text], .input-field textarea {
+  background-color: rgba(116, 116, 116, 0.3);
+  color: #fff;
+}
+
+.sendbtn {
+  width: 25%;
+  margin-left: 3%;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.message-alert {
+  position: fixed;
+  top: 75vh;
+  z-index: 9999;
+  min-width: 80%;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+  opacity: 1;
+  transition-delay: 3s;
+}
+
+.message-success, .message-error {
+  text-align: center;
+  padding: 10px 3% !important;
+  font-size: 1.3em !important;
+  min-height: 50px;
+  min-width: 70%;
+}
+
+.message-error {
+  background-color: #ef9a9a;
+}
+
+.message-success {
+  background-color: #80cbc4;
+}
+
+.message-alert.fade-out {
+  opacity: 0;
+}
+
+li.tab {
+  width: 20%;
+}
+
+.tabs .tab a {
+  color: #d500f9 !important;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.tabs .indicator {
+  background-color: #d500f9 !important;
+}
+
+/*# sourceMappingURL=index.css.map */

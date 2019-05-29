@@ -3,14 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "emailjs-com": "^2.3.2",
+    "gh-pages": "^2.0.1",
+    "node": "8",
     "react": "^16.8.6",
+    "react-css-transition-replace": "^3.0.3",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "sass": "^1.20.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "watch": "sass --watch src/scss/index.scss:src/css/index.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
