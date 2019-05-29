@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/Megan-Bailey-Portfolio/static/css/main.9c4e2d33.chunk.css",
-    "main.js": "/Megan-Bailey-Portfolio/static/js/main.2e3d34c5.chunk.js",
-    "main.js.map": "/Megan-Bailey-Portfolio/static/js/main.2e3d34c5.chunk.js.map",
+    "main.js": "/Megan-Bailey-Portfolio/static/js/main.71d0116b.chunk.js",
+    "main.js.map": "/Megan-Bailey-Portfolio/static/js/main.71d0116b.chunk.js.map",
     "runtime~main.js": "/Megan-Bailey-Portfolio/static/js/runtime~main.ce205e0b.js",
     "runtime~main.js.map": "/Megan-Bailey-Portfolio/static/js/runtime~main.ce205e0b.js.map",
-    "static/js/2.9f53ea3e.chunk.js": "/Megan-Bailey-Portfolio/static/js/2.9f53ea3e.chunk.js",
-    "static/js/2.9f53ea3e.chunk.js.map": "/Megan-Bailey-Portfolio/static/js/2.9f53ea3e.chunk.js.map",
+    "static/js/2.0f2bec9f.chunk.js": "/Megan-Bailey-Portfolio/static/js/2.0f2bec9f.chunk.js",
+    "static/js/2.0f2bec9f.chunk.js.map": "/Megan-Bailey-Portfolio/static/js/2.0f2bec9f.chunk.js.map",
     "index.html": "/Megan-Bailey-Portfolio/index.html",
-    "precache-manifest.b7438c0f3ea695b35f1d469d34e4f077.js": "/Megan-Bailey-Portfolio/precache-manifest.b7438c0f3ea695b35f1d469d34e4f077.js",
-    "service-worker.js": "/Megan-Bailey-Portfolio/service-worker.js",
-    "static/css/main.9c4e2d33.chunk.css.map": "/Megan-Bailey-Portfolio/static/css/main.9c4e2d33.chunk.css.map",
-    "static/media/index.css": "/Megan-Bailey-Portfolio/static/media/hero-bg.a9942acb.jpg"
+    "precache-manifest.63cdbf6528d276f1da6a26c9370af92f.js": "/Megan-Bailey-Portfolio/precache-manifest.63cdbf6528d276f1da6a26c9370af92f.js",
+    "service-worker.js": "/Megan-Bailey-Portfolio/service-worker.js"
   }
 }
