@@ -410,3 +410,15 @@ li.tab {
 .tabs .indicator {
   background-color: $bright-pink !important;
 }
+
+// Media queries
+
+@media (max-width: 768px) {
+
+  #skills {
+    position: absolute;
+    width: 50vw;
+    transform: translatex(0vh);
+  }
+
+}
