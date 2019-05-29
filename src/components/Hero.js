@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../css/index.css'
+import '../../public/css/index.css'
 
 class Hero extends Component {
     render() {

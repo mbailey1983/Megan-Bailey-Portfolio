@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../css/index.css'
+import '../../public/css/index.css'
 import * as emailjs from 'emailjs-com'
 
 const rEmail = process.env.REACT_APP_EMAILJS_RECEIVER;
