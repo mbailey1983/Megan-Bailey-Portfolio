@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import '../public/css/index.css'
 import About from './components/About'
 import Hero from './components/Hero'
 import Projects from './components/Projects'

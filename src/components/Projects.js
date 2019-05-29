@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../../public/css/index.css'
 
 class Projects extends Component {
 
