@@ -9,6 +9,10 @@ body {
   }
   
  /* Typography */
+
+ h1 {
+     margin: 2.1rem 0 1.08rem 0;
+ }
   
   h2, h3 {
     font-family: $code;
@@ -20,6 +24,11 @@ body {
       font-family: $code;
       color: #fff;
       font-size: 1em;
+  }
+
+  .chip {
+      color: $teal;
+      font-weight: 600;
   }
 
   #project p {

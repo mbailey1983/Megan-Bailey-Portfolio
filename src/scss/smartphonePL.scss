@@ -10,7 +10,7 @@ and (max-width : 480px) {
 h2, h3 {
     font-family: $code;
     font-size: 2.2em !important;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
 }
 
   .glitch {
@@ -59,7 +59,7 @@ p {
 
   #skills {
     position: absolute;
-    width: 50vw;
+    width: 75vw;
     transform: translatex(5vw);
     z-index: 0;
   }
