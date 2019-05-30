@@ -420,6 +420,7 @@ li.tab {
     position: fixed;
     z-index: 999;
     background: rgba(0,0,0,0);
+    flex: 0 1 auto;
   }
 
  .right-sidebar ul {
