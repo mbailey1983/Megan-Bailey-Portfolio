@@ -21,6 +21,10 @@ p {
     font-size: 0.9em;
 }
 
+.btn {
+    font-size: 0.8em;
+}
+
    /* Section Layout & Styling */
 
 .container > .right-sidebar {
@@ -61,6 +65,7 @@ p {
   }
 
   #bio {
+      padding: relative;
       z-index: 2;
   }
 
