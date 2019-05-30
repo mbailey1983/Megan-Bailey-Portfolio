@@ -23,8 +23,13 @@ h3 {
      right: 5vh;
  }
 
+ .right-sidebar ul {
+    text-align: center;
+}
+
  .right-sidebar li {
     padding: 0 12px;
+    display: inline-block;
  }
 
   #skills {
