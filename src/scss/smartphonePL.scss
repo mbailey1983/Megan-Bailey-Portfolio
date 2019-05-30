@@ -5,7 +5,7 @@ and (max-width : 480px) {
 
 /* Styles */
 
-// Typography
+/* Typography */
 
 h2, h3 {
     font-family: $code;
@@ -23,7 +23,7 @@ p {
     font-size: 2.3em;
 }
 
-  // Section Layout & Styling
+   /* Section Layout & Styling */
 
 .container > .right-sidebar {
      top: 0;
@@ -93,7 +93,7 @@ p {
     color: $bright-pink;
   }
 
- // Slide In/Out Skills
+ /* Slide In/Out Skills */
 
   #bio.glitchin {
     @include animation(glitchin 0.9s linear 1s both);

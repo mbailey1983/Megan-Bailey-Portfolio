@@ -8,7 +8,7 @@ body {
     overflow-x: hidden
   }
   
-  // Typography
+ /* Typography */
   
   h2, h3 {
     font-family: $code;
@@ -24,7 +24,7 @@ body {
     font-size: 18px;
   }
   
-  // Layout & Section Styling
+ /* Layout & Section Styling */
 
   .section-title {
     padding: 3% 0;
@@ -95,8 +95,8 @@ body {
     @include animation (glitchout 0.5s linear both);
   }
   
-  // Slide In/Out Skills
-  
+  /*  Slide In/Out Skills */
+
   #skills {
     position: absolute;
     width: 50vw;
@@ -111,7 +111,7 @@ body {
    @include animation (glitchout 0.5s linear both);
   }
 
-  // Forms Styling
+  /* Forms Styling */
 
   .contact-form {
     background-color: rgba(0, 0, 0, 0.65) !important;
@@ -190,7 +190,7 @@ body {
     opacity: 0;
   }
   
-  // Tabs Styling
+  /* Tabs Styling */
   li.tab {
     width: 20%;
   }
