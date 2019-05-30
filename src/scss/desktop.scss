@@ -16,6 +16,11 @@ body {
     font-weight: 600 !important;
   }
 
+  p {
+      font-family: $code;
+      color: #fff;
+  }
+
   #project p {
     font-size: 1.3em;
   }
