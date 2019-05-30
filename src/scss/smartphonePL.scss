@@ -33,7 +33,7 @@ p {
     padding: 0 12px;
  }
 
- .hero {
+ .container > .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg.jpg");
@@ -43,7 +43,7 @@ p {
     @include flex-col-center();
   }
 
-  .about {
+  .container > .about {
     width: 100%;
     min-height: 100vh;
     margin: 0;
@@ -54,7 +54,7 @@ p {
     @include background-image();
   }
 
-  .projects {
+  .container > .projects {
     width: 100%;
     min-height: 100vh;
     background:
@@ -63,7 +63,7 @@ p {
     @include background-image();
   }
 
-  .contact {
+  .container > .contact {
     width: 100%;
     min-height: 100vh;
     background-image:
