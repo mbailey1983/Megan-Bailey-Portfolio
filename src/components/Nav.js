@@ -6,7 +6,7 @@ class Nav extends Component {
         return (
             <div>
                 <div className="right-sidebar">
-                    <ul id="slide-out" class="side-nav fixed">
+                    <ul id="slide-out" class="side-nav">
                         <li>
                         <a href="#home" className="btn-floating waves-effect purple accent-3"><i className="medium material-icons">home</i></a>
                         </li>
