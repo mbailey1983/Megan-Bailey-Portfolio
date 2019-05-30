@@ -20,11 +20,11 @@ const Bio = (props) => {
                             to continue to move towards becoming a Full Stack Developer. I have built several pages and apps to practice my skills, which you can find on my Github
                             profile.
                         </p>
-                        <div className="col s3 m2 l1">
+                        <div className="col s4 m3 l2">
                             <button target="_blank" href="https://github.com/rockstarcreativestudio" rel="noopener noreferrer" className="btn purple accent-3 waves-effect">
                             <i className="fab fa-5x fa-github"></i></button>
                         </div>
-                        <div className="col s6 offset-s3 m5 offset-m2 l4 offset-l1">
+                        <div className="col s8 offset-s3 m5 offset-m2 l4 offset-l1">
                         <button onClick={props.handleSwap} className="btn purple accent-3 waves-effect">My Current Skills</button>
                         </div>
                     </div>

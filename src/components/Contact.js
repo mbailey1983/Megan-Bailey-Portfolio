@@ -101,7 +101,7 @@ class Contact extends Component {
 
                  <section id="contact" className="contact section scrollspy">
                     <div className="row">
-                        <h1 className="section-title glitch center-align">Get In Touch</h1>
+                        <h1 data-text="Get In Touch" className="section-title glitch center-align">Get In Touch</h1>
                     </div>
                     <form className="container" onSubmit={this.handleSubmit}>
                         <div className="card-panel contact-form col s12">
@@ -134,7 +134,7 @@ class Contact extends Component {
                                         <button type="submit"
                                         className="sendbtn btn purple accent-3 black-text waves-effect"><strong>Send</strong></button>
                                     </div>
-                                    <div className="col s10 offset-s1">
+                                    <div className="col s12">
                                         {this.renderMsg()}
                                     </div>
                                 </div>
