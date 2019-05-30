@@ -151,7 +151,7 @@ section.hero {
     url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg.jpg");
   @include background-image();
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -160,7 +160,7 @@ section.hero {
 
 .about {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding-top: 3%;
   background-image:
@@ -183,7 +183,7 @@ section.hero {
 
 .projects {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/coding-1841550_1280.jpg');
@@ -192,7 +192,7 @@ section.hero {
 
 .contact {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image:
     linear-gradient(rgba(131,22,193,0.6), rgba(131,22,193,0.6)),
     url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/contact-bg.jpg");
@@ -422,11 +422,11 @@ li.tab {
     background: rgba(0,0,0,0);
   }
 
-  ul.right-sidebar {
+ .right-sidebar ul {
     text-align: center;
   }
 
-  li.right-sidebar {
+  .right-sidebar li {
     display: inline-block;
   }
 
