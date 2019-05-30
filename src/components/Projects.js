@@ -7,8 +7,8 @@ class Projects extends Component {
         return (
             <div>
                 <section id="projects" className="projects section black scrollspy">
-                    <div className="row">
-                        <h1 className="glitch center-align section-title" data-text="Projects">Projects</h1>
+                    <div className="row section-title">
+                        <h1 className="glitch center-align" data-text="Projects">Projects</h1>
                     </div>
                     <div className="container">
                         <div className="row">

@@ -9,8 +9,8 @@ class About extends Component {
         <section id="about" className="about section grey darken-4 scrollspy">
 
             <div className="container">
-              <div className="row">
-                <h1 className="glitch section-title" data-text="About Me">About Me</h1>
+              <div className="row section-title">
+                <h1 className="glitch" data-text="About Me">About Me</h1>
 
                 <div>
                       <AboutBio />

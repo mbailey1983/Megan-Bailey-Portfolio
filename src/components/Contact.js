@@ -100,8 +100,8 @@ class Contact extends Component {
             <div>
 
                  <section id="contact" className="contact section scrollspy">
-                    <div className="row">
-                        <h1 data-text="Get In Touch" className="section-title glitch center-align">Get In Touch</h1>
+                    <div className="row section-title">
+                        <h1 data-text="Get In Touch" className="glitch center-align">Get In Touch</h1>
                     </div>
                     <form className="container" onSubmit={this.handleSubmit}>
                         <div className="card-panel contact-form col s12">
