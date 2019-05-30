@@ -87,12 +87,12 @@ body {
   .bio-icon:hover {
     color: $bright-pink;
   }
-  
-  
+
+
   #bio.glitchin {
     @include animation(glitchin 0.9s linear 1s both);
   }
-  
+
   #bio.glitchout {
     @include animation (glitchout 0.5s linear both);
   }
@@ -104,25 +104,25 @@ body {
     width: 50vw;
     transform: translatex(-35vh);
   }
-  
+
   #skills.glitch-in {
    @include animation (glitchin 0.5s linear 1s both);
   }
-  
+
   #skills.glitch-out {
    @include animation (glitchout 0.5s linear both);
   }
-  
+
   // Forms Styling
-  
+
   .contact-form {
     background-color: rgba(0, 0, 0, 0.65) !important;
   }
-  
+
   .textfield {
     margin-left: 5%;
   }
-  
+
    /* label color */
    .input-field label {
     color: #ffffff;
@@ -138,7 +138,7 @@ body {
     color: #fff;
     box-shadow: 0 1px 0 0 #000;
   }
-  
+
   /* label focus color */
   .input-field textarea:focus + label {
     color: $bright-pink !important;
@@ -149,19 +149,19 @@ body {
     color: #fff;
     box-shadow: 0 1px 0 0 #000;
   }
-  
+
   .input-field input[type=text], .input-field textarea {
     background-color: rgba(116, 116, 116, 0.3);
     color: #fff;
   }
-  
+
   .sendbtn {
     width: 25%;
     margin-left:3%;
     font-weight: 800 !important;
     font-size: 1.5em;
   }
-  
+
   .message-alert {
     position: fixed;
     top: 75vh;

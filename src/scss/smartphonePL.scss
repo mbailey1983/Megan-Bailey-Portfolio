@@ -19,6 +19,10 @@ p {
     font-size: 1.5em;
   }
 
+  .glitch {
+    font-size: 2.3em;
+}
+
   // Section Layout & Styling
 
 .container > .right-sidebar {
@@ -33,7 +37,7 @@ p {
     padding: 0 12px;
  }
 
- .container > .hero {
+ .container > #home {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg.jpg");
@@ -43,7 +47,7 @@ p {
     @include flex-col-center();
   }
 
-  .container > .about {
+  .container > #about {
     width: 100%;
     min-height: 100vh;
     margin: 0;
@@ -54,7 +58,7 @@ p {
     @include background-image();
   }
 
-  .container > .projects {
+  .container > #projects {
     width: 100%;
     min-height: 100vh;
     background:
@@ -63,7 +67,7 @@ p {
     @include background-image();
   }
 
-  .container > .contact {
+  .container > #contact {
     width: 100%;
     min-height: 100vh;
     background-image:
@@ -72,10 +76,6 @@ p {
     @include background-image();
     background-blend-mode: multiply;
   }
-
- .glitch {
-     font-size: 2.3em;
- }
 
  .glitch::before {
      bottom: 40px;
@@ -89,7 +89,34 @@ p {
      padding: 1.5em 0;
  }
 
- #skills {
-     z-index: 0;
- }
+ .bio-icon:hover {
+    color: $bright-pink;
+  }
+
+ // Slide In/Out Skills
+
+  #bio.glitchin {
+    @include animation(glitchin 0.9s linear 1s both);
+  }
+
+  #bio.glitchout {
+    @include animation (glitchout 0.5s linear both);
+  }
+
+  #skills {
+    position: absolute;
+    width: 50vw;
+    transform: translatex(-35vh);
+    z-index: 0;
+  }
+
+  #skills.glitch-in {
+   @include animation (glitchin 0.5s linear 1s both);
+  }
+
+  #skills.glitch-out {
+   @include animation (glitchout 0.5s linear both);
+  }
+
+
 }
