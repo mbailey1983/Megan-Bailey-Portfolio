@@ -174,7 +174,7 @@ body {
     top: 75vh;
     z-index: 9999;
     min-width: 80%;
-    @include transition-opacity();
+    @include transition-opacity(opacity 3s ease-in-out);
     opacity: 1;
     transition-delay: 3s;
   }

@@ -22,11 +22,12 @@ $teal: #00fff9;
   background-position: center;
 }
 
-@mixin transition-opacity() {
-  -webkit-transition: opacity 3s ease-in-out;
-  -moz-transition: opacity 3s ease-in-out;
-  -ms-transition: opacity 3s ease-in-out;
-  -o-transition: opacity 3s ease-in-out;
+@mixin transition-opacity($value) {
+  transition: $value;
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
 }
 
 /* Glitching Text from Isaac Doud - https://codepen.io/cipherbeta  */
