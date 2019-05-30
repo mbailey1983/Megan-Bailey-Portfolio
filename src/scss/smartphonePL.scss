@@ -1,0 +1,39 @@
+/* Smartphones (portrait and landscape) ———– */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+
+/* Styles */
+ .right-sidebar {
+     top: 0;
+     right: 5vh;
+ }
+
+ .right-sidebar li {
+    padding: 0 12px;
+ }
+
+ .glitch {
+     font-size: 2.3em;
+ }
+
+ .glitch::before {
+     bottom: 40px;
+ }
+
+ .glitch::after {
+     bottom: 40px;
+ }
+
+ h3 {
+     font-size: 2.2em;
+ }
+
+ .section-title {
+     padding: 1.5em 0;
+ }
+
+ #skills {
+     z-index: 0;
+ }
+}
