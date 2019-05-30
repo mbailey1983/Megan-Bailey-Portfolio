@@ -5,6 +5,7 @@ class Nav extends Component {
     render() {
         return (
             <div>
+                <div className="container">
                 <div className="right-sidebar">
                     <ul>
                         <li>
@@ -20,7 +21,7 @@ class Nav extends Component {
                         <a href="#contact" className="btn-floating waves-effect purple accent-3"><i className="medium material-icons">email</i></a>
                         </li>
                     </ul>
-
+                    </div>
                 </div>
             </div>
         )
