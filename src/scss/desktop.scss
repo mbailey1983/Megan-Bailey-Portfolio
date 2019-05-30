@@ -191,7 +191,7 @@ body {
   }
 
   .chip .message-success, .chip .message-error {
-      display: inline-flex;
+      display: inline-flex !important;
       height: auto;
   }
   

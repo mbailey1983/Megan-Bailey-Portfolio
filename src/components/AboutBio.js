@@ -19,11 +19,11 @@ const Bio = (props) => {
                             to continue to move towards becoming a Full Stack Developer. I have built several pages and apps to practice my skills, which you can find on my Github
                             profile.
                         </p>
-                        <div className="col s3 m2 l2">
+                        <div className="col s12 m3 l2">
                             <button target="_blank" href="https://github.com/rockstarcreativestudio" rel="noopener noreferrer" className="btn purple accent-3 waves-effect">
                             <i className="fab fa-5x fa-github"></i></button>
                         </div>
-                        <div className="col s8 offset-s1 m5 offset-m3 l4 offset-l1">
+                        <div className="col s12 m5 offset-m3 l4 offset-l1">
                         <button onClick={props.handleSwap} className="btn purple accent-3 waves-effect">My Current Skills</button>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ const Skills = (props) => {
         <div>
             <div id="skills" className="col s12 m10 offset-m4 l8 offset-l6 glitch-out">
                 <div className="row">
-                    <h3 className="purple-text accent-3">Coding</h3>
+                    <h3 className="pink-text accent-3">Coding</h3>
                     <div className="chip purple accent-3 black-text">HTML5</div>
                     <div className="chip purple accent-3 black-text">CSS3</div>
                     <div className="chip purple accent-3 black-text">SASS</div>
@@ -47,13 +47,13 @@ const Skills = (props) => {
                     <div className="chip purple accent-3 black-text">MaterializeCSS</div>
                 </div>
                 <div className="row">
-                    <h3 className="purple-text accent-3">Software</h3>
+                    <h3 className="pink-text accent-3">Software</h3>
                     <div className="chip purple accent-3 black-text">Adobe Photoshop</div>
                     <div className="chip purple accent-3 black-text">Adobe Indesign</div>
                     <div className="chip purple accent-3 black-text">Invision</div>
                 </div>
                 <div className="row">
-                    <h3 className="purple-text accent-3">Other</h3>
+                    <h3 className="pink-text accent-3">Other</h3>
                     <div className="chip purple accent-3 black-text">Slack</div>
                     <div className="chip purple accent-3 black-text">Discord</div>
                     <div className="chip purple accent-3 black-text">Wrike</div>
