@@ -18,7 +18,7 @@ body {
     font-weight: 600 !important;
   }
 
-  p.project {
+  #project p {
     font-size: 1.3em;
   }
 
@@ -32,7 +32,7 @@ body {
     padding: 3% 0;
   }
   
-  .hero {
+  #home {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg.jpg");
@@ -42,7 +42,7 @@ body {
     @include flex-col-center();
   }
   
-  .about {
+  #about {
     width: 100%;
     min-height: 100vh;
     margin: 0;
@@ -65,7 +65,7 @@ body {
     padding-bottom: 40%;
   }
   
-  .projects {
+  #projects {
     width: 100%;
     min-height: 100vh;
     background:
@@ -74,7 +74,7 @@ body {
     @include background-image();
   }
   
-  .contact {
+  #contact {
     width: 100%;
     min-height: 100vh;
     background-image:
