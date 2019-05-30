@@ -116,3 +116,97 @@ $steps: 10;
     justify-content: center;
     align-items: center;
 }
+
+// Glitch In/Out Animation
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -ms-animation: $value;
+  -o-animation: $value;
+  animation: $value;
+}
+
+@keyframes glitchout {
+  0% {
+   text-shadow: none;
+ opacity: 1;
+  }
+  5% {
+    text-shadow: -1.5px -1.5px 0 $teal, 2px 2px 0 $pink;
+  }
+  15% {
+   text-shadow: 2px 2px 0 $teal, -1.5px -1.5px 0 $pink;
+  }
+  23% {
+   text-shadow: 1.5px -2px 0 $teal, -2px 1.5px 0 $pink;
+  }
+  35% {
+   text-shadow: 2px 2px 0 $teal, -1.5px -1px 0 $pink;
+  }
+  48% {
+   text-shadow: 1.5px -2px 0 $teal, -2px 1.5px 0 $pink;
+  }
+  57% {
+   text-shadow: 2px 2px 0 $teal, -1.5px -1.5px 0 $pink;
+  }
+  63% {
+   text-shadow: 1.5px -2px 0 $teal, -2px 1.5px 0 $pink;
+  }
+  75% {
+   text-shadow: -1px 1.5px 0 $teal, 1.5px -3px 0 $pink;
+  }
+  87% {
+   text-shadow: 2px 2px 0 $teal, -1.5px -1.5px 0 $pink;
+ opacity:0.8;
+  }
+  95% {
+   text-shadow: 1.5px -2px 0 $teal, -2px 1.5px 0 $pink;
+  }
+  100% {
+ text-shadow: none;
+   opacity: 0;
+  }
+ }
+
+ @keyframes glitchin {
+  0% {
+    text-shadow: none;
+  opacity: 0;
+   }
+   5% {
+    text-shadow: -1.5px -1.5px 0 $teal, 2px 2px 0 $pink;
+   }
+   15% {
+    text-shadow: 2px 2px 0 $teal, -1.5px -1.5px 0 #f00;
+   }
+   23% {
+    text-shadow: 1.5px -2px 0 $teal, -2px 1.5px 0 $pink;
+    opacity: 0.15;
+   }
+   35% {
+    text-shadow: 2px 2px 0 $teal, -1.5px -1px 0 $pink;
+   }
+   48% {
+    text-shadow: 1.5px -2px 0 $teal, -2px 1.5px 0 $pink;
+   }
+   57% {
+    text-shadow: 2px 2px 0 $teal, -1.5px -1.5px 0 $pink;
+   }
+   63% {
+    text-shadow: 1.5px -2px 0 $teal, -2px 1.5px 0 $pink;
+   }
+   75% {
+    text-shadow: -1px 1.5px 0 $teal, 1.5px -3px 0 $pink;
+   }
+   87% {
+    text-shadow: 2px 2px 0 $teal, -1.5px -1.5px 0 $pink;
+  opacity:0.8;
+   }
+   95% {
+    text-shadow: 1.5px -2px 0 $teal, -2px 1.5px 0 $pink;
+   }
+   100% {
+  text-shadow: none;
+    opacity: 1;
+   }
+  }
