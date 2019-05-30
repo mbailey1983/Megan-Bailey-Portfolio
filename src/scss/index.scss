@@ -177,11 +177,6 @@ section.hero {
   background: rgba(0,0,0,0);
 }
 
-#menu {
-  top: 10%;
-  margin-right:  !important;
-}
-
 .right-sidebar li {
   padding-bottom: 40%;
 }
@@ -418,6 +413,22 @@ li.tab {
 // Media queries
 
 @media (max-width: 768px) {
+
+  .right-sidebar {
+    top: 5%;
+    right: 50%;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0,0,0,0);
+  }
+
+  ul.right-sidebar {
+    text-align: center;
+  }
+
+  li.right-sidebar {
+    display: inline-block;
+  }
 
   #skills {
     position: absolute;
