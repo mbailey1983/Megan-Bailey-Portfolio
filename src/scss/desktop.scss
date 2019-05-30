@@ -27,18 +27,15 @@ body {
   }
 
   .chip {
-      color: $teal;
+      color: $teal !important;
       font-weight: 600;
+      font-size: 18px;
   }
 
   #project p {
     font-size: 1.3em;
   }
 
-  .chip {
-    font-size: 18px;
-  }
-  
  /* Layout & Section Styling */
 
   .section-title {
@@ -176,13 +173,13 @@ body {
   }
 
   .message-alert {
-    position: fixed;
-    top: 75vh;
+    position: relative;
     z-index: 9999;
     min-width: 80%;
     @include transition-opacity(opacity 3s ease-in-out);
     opacity: 1;
     transition-delay: 3s;
+    margin: 0.8em 0;
   }
   
   .message-success, .message-error {
@@ -191,6 +188,11 @@ body {
     font-size: 1.3em !important;
     min-height: 50px;
     min-width: 70%;
+  }
+
+  .chip .message-success, .chip .message-error {
+      display: inline-flex;
+      height: auto;
   }
   
   .message-error {
