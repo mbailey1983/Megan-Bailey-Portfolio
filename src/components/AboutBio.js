@@ -11,11 +11,10 @@ const Bio = (props) => {
 
                         <p>
                             Fast forward a few years, I discovered WordPress and CSS. It took a bit of learning but I caught on fast. Over the next 6 - 7 years,
-                            I had at least one website running to discuss my life or hobbies. It seemed natural to me that I should always have a website. And while
-                            coding was a passion, I never really thought about doing more with it.
+                            I had at least one website running to discuss my life or hobbies. And while coding was a passion, I never really thought about doing more with it.
                         </p>
                         <p>
-                            Today, I have built my own web design/developmet business from the ground up. Starting with only one client in 2015, I now have built more than
+                            Today, I have built my own web design/development business from the ground up. Starting with only one client in 2015, I now have built more than
                             10 websites for clients. I have added Javascript ES6, ReactJS, Bootstrap, and MaterializeCSS to my coding skills, using FreeCodeCamp's curriculum
                             to continue to move towards becoming a Full Stack Developer. I have built several pages and apps to practice my skills, which you can find on my Github
                             profile.
@@ -60,7 +59,7 @@ const Skills = (props) => {
                     <div className="chip purple accent-3 black-text">Wrike</div>
                     <div className="chip purple accent-3 black-text">Asana</div>
                 </div>
-                <div className="col s6 offset-s3 m5 offset-m2 l4 offset-l1">
+                <div className="col s8 offset-s1 m5 offset-m3 l4 offset-l1">
                     <button onClick={props.handleSwap} className="btn purple accent-3 waves-effect">My Bio</button>
                 </div>
 
