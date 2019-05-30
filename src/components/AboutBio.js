@@ -53,7 +53,7 @@ const Skills = (props) => {
                     <div className="chip purple accent-3 black-text">Invision</div>
                 </div>
                 <div className="row">
-                    <h3 className="purple-text accent-3">Communication & Project Management</h3>
+                    <h3 className="purple-text accent-3">Other</h3>
                     <div className="chip purple accent-3 black-text">Slack</div>
                     <div className="chip purple accent-3 black-text">Discord</div>
                     <div className="chip purple accent-3 black-text">Wrike</div>
