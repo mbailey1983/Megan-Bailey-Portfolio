@@ -106,13 +106,13 @@ class Contact extends Component {
                     <form className="container" onSubmit={this.handleSubmit}>
                         <div className="card-panel contact-form col s12">
                                 <div className="row">
-                                    <div className="input-field col s6">
+                                    <div className="input-field col s12 m6 l6">
                                         <input onChange={this.handleChange}
                                         data-error="Please enter your name."
                                         type="text" id="name" value={this.state.name} />
                                         <label htmlFor="name">Name</label>
                                     </div>
-                                    <div className="input-field col s6">
+                                    <div className="input-field col s12 m6 l6">
                                         <input onChange={this.handleChange}
                                         data-error="Please enter a valid email address."
                                         type="text" id="email" value={this.state.email}/>
