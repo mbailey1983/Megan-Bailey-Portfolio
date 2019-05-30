@@ -76,4 +76,8 @@ p {
       font-size: 1.3em !important;
   }
 
+  .message-success, .message-error {
+      min-height: 80px;
+  }
+
 }
