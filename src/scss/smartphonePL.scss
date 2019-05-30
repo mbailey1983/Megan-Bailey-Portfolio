@@ -21,7 +21,7 @@ p {
 
   // Section Layout & Styling
 
-.container .right-sidebar {
+.container > .right-sidebar {
      top: 0;
      right: 5vh;
      position: fixed;

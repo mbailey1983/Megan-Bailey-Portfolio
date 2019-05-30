@@ -13,6 +13,7 @@ body {
   // Typography
   
   h2, h3 {
+    font-family: $code;
     letter-spacing: 0.5em;
     font-weight: 600 !important;
   }
