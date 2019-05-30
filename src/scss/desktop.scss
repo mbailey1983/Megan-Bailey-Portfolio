@@ -30,16 +30,59 @@ body {
   .section-title {
     padding: 3% 0;
   }
-
+  
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg.jpg");
+    @include background-image();
+    width: 100%;
+    min-height: 100vh;
+    @include flex-col-center();
+  }
+  
+  .about {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 3%;
+    background-image:
+      linear-gradient(110deg, rgba(255,0,193, 0.3), rgba(0,0,0, 1) 60%),
+      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/about-bg.jpg");
+    @include background-image();
+  }
+  
   .right-sidebar {
     top: 35%;
     right: 2%;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0,0,0,0);
   }
-
+  
   .right-sidebar li {
     padding-bottom: 40%;
   }
-
+  
+  .projects {
+    width: 100%;
+    min-height: 100vh;
+    background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/coding-1841550_1280.jpg');
+    @include background-image();
+  }
+  
+  .contact {
+    width: 100%;
+    min-height: 100vh;
+    background-image:
+      linear-gradient(rgba(131,22,193,0.6), rgba(131,22,193,0.6)),
+      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/contact-bg.jpg");
+    @include background-image();
+    background-blend-mode: multiply;
+  }
+  
   .bio-icon:hover {
     color: $bright-pink;
   }
