@@ -139,6 +139,10 @@ p.project {
   padding: 3% 0;
 }
 
+.chip {
+  font-size: 18px;
+}
+
 // Layout & Section Styling
 
 section.hero {
@@ -362,7 +366,7 @@ section.hero {
 .sendbtn {
   width: 25%;
   margin-left:3%;
-  font-weight: 800;
+  font-weight: 800 !important;
   font-size: 1.5em;
 }
 
@@ -385,11 +389,11 @@ section.hero {
 }
 
 .message-error {
-  background-color: #ef9a9a;
+  background-color: #ef9a9a !important;
 }
 
 .message-success {
-  background-color: #80cbc4;
+  background-color: #80cbc4 !important;
 }
 
 .message-alert.fade-out {
@@ -417,8 +421,16 @@ li.tab {
 
   #skills {
     position: absolute;
-    width: 50vw;
-    transform: translatex(0vh);
+    width: 70vw;
+    transform: translatex(2vh);
+  }
+
+  h3 {
+    font-size: 2.32 em;
+  }
+
+  .glitch {
+    font-size: 2.8em;
   }
 
 }
