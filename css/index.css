@@ -54,175 +54,175 @@ box to be used for the random glitch effect. Also adds a very subtle
 skew to change the 'thickness' of the glitch.*/
 @keyframes glitch-anim {
   0% {
-    clip: rect(99px, 9999px, 47px, 0);
-    transform: skew(0.86deg);
-  }
-  5% {
-    clip: rect(89px, 9999px, 23px, 0);
-    transform: skew(0.27deg);
-  }
-  10% {
-    clip: rect(66px, 9999px, 47px, 0);
-    transform: skew(0.44deg);
-  }
-  15% {
-    clip: rect(62px, 9999px, 63px, 0);
-    transform: skew(0.15deg);
-  }
-  20% {
-    clip: rect(12px, 9999px, 65px, 0);
-    transform: skew(0.98deg);
-  }
-  25% {
-    clip: rect(8px, 9999px, 47px, 0);
-    transform: skew(0.85deg);
-  }
-  30% {
-    clip: rect(32px, 9999px, 42px, 0);
-    transform: skew(0.82deg);
-  }
-  35% {
-    clip: rect(56px, 9999px, 65px, 0);
-    transform: skew(0.15deg);
-  }
-  40% {
-    clip: rect(89px, 9999px, 3px, 0);
-    transform: skew(0.31deg);
-  }
-  45% {
-    clip: rect(37px, 9999px, 48px, 0);
+    clip: rect(6px, 9999px, 78px, 0);
     transform: skew(0.61deg);
   }
-  50% {
-    clip: rect(75px, 9999px, 86px, 0);
-    transform: skew(0.47deg);
+  5% {
+    clip: rect(70px, 9999px, 16px, 0);
+    transform: skew(0.07deg);
   }
-  55% {
-    clip: rect(12px, 9999px, 9px, 0);
-    transform: skew(0.74deg);
+  10% {
+    clip: rect(73px, 9999px, 63px, 0);
+    transform: skew(0.53deg);
   }
-  60% {
-    clip: rect(90px, 9999px, 60px, 0);
-    transform: skew(0.37deg);
+  15% {
+    clip: rect(66px, 9999px, 70px, 0);
+    transform: skew(0.81deg);
   }
-  65% {
-    clip: rect(57px, 9999px, 2px, 0);
-    transform: skew(0.28deg);
-  }
-  70% {
-    clip: rect(56px, 9999px, 65px, 0);
-    transform: skew(0.46deg);
-  }
-  75% {
-    clip: rect(31px, 9999px, 71px, 0);
-    transform: skew(0.19deg);
-  }
-  80% {
-    clip: rect(50px, 9999px, 51px, 0);
-    transform: skew(0.09deg);
-  }
-  85% {
-    clip: rect(90px, 9999px, 1px, 0);
-    transform: skew(0.16deg);
-  }
-  90% {
-    clip: rect(72px, 9999px, 66px, 0);
-    transform: skew(0.15deg);
-  }
-  95% {
-    clip: rect(39px, 9999px, 61px, 0);
+  20% {
+    clip: rect(34px, 9999px, 42px, 0);
     transform: skew(0.66deg);
   }
-  100% {
-    clip: rect(73px, 9999px, 68px, 0);
+  25% {
+    clip: rect(85px, 9999px, 21px, 0);
+    transform: skew(0.03deg);
+  }
+  30% {
+    clip: rect(68px, 9999px, 33px, 0);
+    transform: skew(0.41deg);
+  }
+  35% {
+    clip: rect(14px, 9999px, 11px, 0);
+    transform: skew(0.19deg);
+  }
+  40% {
+    clip: rect(40px, 9999px, 79px, 0);
+    transform: skew(0.56deg);
+  }
+  45% {
+    clip: rect(94px, 9999px, 99px, 0);
+    transform: skew(0.14deg);
+  }
+  50% {
+    clip: rect(27px, 9999px, 31px, 0);
+    transform: skew(0.81deg);
+  }
+  55% {
+    clip: rect(34px, 9999px, 45px, 0);
+    transform: skew(0.24deg);
+  }
+  60% {
+    clip: rect(4px, 9999px, 89px, 0);
+    transform: skew(0.71deg);
+  }
+  65% {
+    clip: rect(86px, 9999px, 37px, 0);
+    transform: skew(0.33deg);
+  }
+  70% {
+    clip: rect(78px, 9999px, 83px, 0);
+    transform: skew(0.06deg);
+  }
+  75% {
+    clip: rect(43px, 9999px, 28px, 0);
+    transform: skew(0.64deg);
+  }
+  80% {
+    clip: rect(49px, 9999px, 28px, 0);
+    transform: skew(0.55deg);
+  }
+  85% {
+    clip: rect(39px, 9999px, 80px, 0);
     transform: skew(0.69deg);
+  }
+  90% {
+    clip: rect(55px, 9999px, 91px, 0);
+    transform: skew(0.22deg);
+  }
+  95% {
+    clip: rect(43px, 9999px, 42px, 0);
+    transform: skew(0.22deg);
+  }
+  100% {
+    clip: rect(21px, 9999px, 95px, 0);
+    transform: skew(0.83deg);
   }
 }
 /* // Same deal, just duplicated for ultra randomness. */
 @keyframes glitch-anim2 {
   0% {
-    clip: rect(49px, 9999px, 82px, 0);
-    transform: skew(0.41deg);
+    clip: rect(86px, 9999px, 81px, 0);
+    transform: skew(0.52deg);
   }
   5% {
-    clip: rect(60px, 9999px, 59px, 0);
-    transform: skew(0.51deg);
+    clip: rect(48px, 9999px, 51px, 0);
+    transform: skew(0.06deg);
   }
   10% {
-    clip: rect(11px, 9999px, 97px, 0);
-    transform: skew(0.47deg);
+    clip: rect(90px, 9999px, 44px, 0);
+    transform: skew(0.45deg);
   }
   15% {
-    clip: rect(77px, 9999px, 70px, 0);
-    transform: skew(0.42deg);
+    clip: rect(68px, 9999px, 19px, 0);
+    transform: skew(0.41deg);
   }
   20% {
-    clip: rect(56px, 9999px, 73px, 0);
-    transform: skew(0.15deg);
+    clip: rect(40px, 9999px, 25px, 0);
+    transform: skew(0.39deg);
   }
   25% {
-    clip: rect(52px, 9999px, 92px, 0);
-    transform: skew(0.46deg);
+    clip: rect(20px, 9999px, 16px, 0);
+    transform: skew(0.08deg);
   }
   30% {
-    clip: rect(100px, 9999px, 23px, 0);
-    transform: skew(0.28deg);
+    clip: rect(75px, 9999px, 64px, 0);
+    transform: skew(0.33deg);
   }
   35% {
-    clip: rect(48px, 9999px, 68px, 0);
-    transform: skew(0.36deg);
+    clip: rect(70px, 9999px, 79px, 0);
+    transform: skew(0.73deg);
   }
   40% {
-    clip: rect(19px, 9999px, 15px, 0);
-    transform: skew(0.81deg);
+    clip: rect(22px, 9999px, 24px, 0);
+    transform: skew(0.25deg);
   }
   45% {
-    clip: rect(15px, 9999px, 59px, 0);
-    transform: skew(0.86deg);
+    clip: rect(96px, 9999px, 79px, 0);
+    transform: skew(0.65deg);
   }
   50% {
-    clip: rect(95px, 9999px, 39px, 0);
-    transform: skew(0.23deg);
+    clip: rect(23px, 9999px, 6px, 0);
+    transform: skew(0.96deg);
   }
   55% {
-    clip: rect(27px, 9999px, 92px, 0);
-    transform: skew(0.02deg);
+    clip: rect(57px, 9999px, 32px, 0);
+    transform: skew(0.41deg);
   }
   60% {
-    clip: rect(33px, 9999px, 31px, 0);
-    transform: skew(0.93deg);
+    clip: rect(24px, 9999px, 11px, 0);
+    transform: skew(0.77deg);
   }
   65% {
-    clip: rect(88px, 9999px, 76px, 0);
-    transform: skew(0.67deg);
+    clip: rect(37px, 9999px, 33px, 0);
+    transform: skew(0.86deg);
   }
   70% {
-    clip: rect(12px, 9999px, 51px, 0);
-    transform: skew(0.23deg);
+    clip: rect(40px, 9999px, 61px, 0);
+    transform: skew(0.18deg);
   }
   75% {
-    clip: rect(60px, 9999px, 19px, 0);
-    transform: skew(0.13deg);
+    clip: rect(76px, 9999px, 67px, 0);
+    transform: skew(0.84deg);
   }
   80% {
-    clip: rect(35px, 9999px, 23px, 0);
-    transform: skew(0.42deg);
+    clip: rect(82px, 9999px, 12px, 0);
+    transform: skew(0.07deg);
   }
   85% {
-    clip: rect(41px, 9999px, 82px, 0);
-    transform: skew(0.98deg);
+    clip: rect(57px, 9999px, 72px, 0);
+    transform: skew(0.95deg);
   }
   90% {
-    clip: rect(77px, 9999px, 50px, 0);
-    transform: skew(0.46deg);
+    clip: rect(36px, 9999px, 35px, 0);
+    transform: skew(0.16deg);
   }
   95% {
-    clip: rect(86px, 9999px, 34px, 0);
+    clip: rect(41px, 9999px, 37px, 0);
     transform: skew(0.13deg);
   }
   100% {
-    clip: rect(64px, 9999px, 12px, 0);
-    transform: skew(0.17deg);
+    clip: rect(71px, 9999px, 67px, 0);
+    transform: skew(0.23deg);
   }
 }
 /* // Does the same deal as before, but now only skews. Used for main text. */
@@ -231,198 +231,36 @@ skew to change the 'thickness' of the glitch.*/
     transform: skew(-2deg);
   }
   10% {
-    transform: skew(-4deg);
-  }
-  20% {
-    transform: skew(1deg);
-  }
-  30% {
-    transform: skew(0deg);
-  }
-  40% {
-    transform: skew(1deg);
-  }
-  50% {
-    transform: skew(1deg);
-  }
-  60% {
-    transform: skew(0deg);
-  }
-  70% {
-    transform: skew(0deg);
-  }
-  80% {
-    transform: skew(0deg);
-  }
-  90% {
     transform: skew(-3deg);
   }
+  20% {
+    transform: skew(-2deg);
+  }
+  30% {
+    transform: skew(-4deg);
+  }
+  40% {
+    transform: skew(2deg);
+  }
+  50% {
+    transform: skew(-4deg);
+  }
+  60% {
+    transform: skew(-2deg);
+  }
+  70% {
+    transform: skew(4deg);
+  }
+  80% {
+    transform: skew(2deg);
+  }
+  90% {
+    transform: skew(-1deg);
+  }
   100% {
-    transform: skew(0deg);
+    transform: skew(-4deg);
   }
 }
-/* Smartphones (portrait and landscape) ———– */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* Styles */
-  .right-sidebar {
-    top: 0;
-    right: 5vh;
-  }
-
-  .right-sidebar li {
-    padding: 0 12px;
-  }
-
-  .glitch {
-    font-size: 2.3em;
-  }
-
-  .glitch::before {
-    bottom: 40px;
-  }
-
-  .glitch::after {
-    bottom: 40px;
-  }
-
-  h3 {
-    font-size: 2.2em !important;
-  }
-
-  .section-title {
-    padding: 1.5em 0;
-  }
-
-  #skills {
-    z-index: 0;
-  }
-}
-/* iPads (portrait and landscape) ———– */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Styles */
-  .right-sidebar {
-    top: 5%;
-    right: 35%;
-    position: fixed;
-    z-index: 999;
-    background: rgba(0, 0, 0, 0);
-    flex: 0 1 auto;
-  }
-
-  .right-sidebar ul {
-    text-align: center;
-  }
-
-  .right-sidebar li {
-    display: inline-block;
-    padding: 0 15px;
-  }
-
-  #skills {
-    position: absolute;
-    width: 70vw;
-    transform: translatex(2vh);
-  }
-
-  h3 {
-    font-size: 2.32 em;
-    letter-spacing: 0.1em;
-  }
-
-  .glitch {
-    font-size: 2.8em;
-  }
-}
-body {
-  width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-h2, h3 {
-  font-family: "VT323", monospace;
-  letter-spacing: 0.5em;
-  font-weight: 600 !important;
-}
-
-p {
-  font-family: "VT323", monospace;
-  color: white !important;
-  line-height: 1.1em;
-  font-size: 1.5em;
-}
-
-p.project {
-  font-size: 1.3em;
-}
-
-.section-title {
-  padding: 3% 0;
-}
-
-.chip {
-  font-size: 18px;
-}
-
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.about {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding-top: 3%;
-  background-image: linear-gradient(110deg, rgba(255, 0, 193, 0.3), black 60%), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/about-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.right-sidebar {
-  top: 35%;
-  right: 2%;
-  position: fixed;
-  z-index: 999;
-  background: rgba(0, 0, 0, 0);
-}
-
-.right-sidebar li {
-  padding-bottom: 40%;
-}
-
-.projects {
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/coding-1841550_1280.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.contact {
-  width: 100%;
-  min-height: 100vh;
-  background-image: linear-gradient(rgba(131, 22, 193, 0.6), rgba(131, 22, 193, 0.6)), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/contact-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: multiply;
-}
-
-.bio-icon:hover {
-  color: #d500f9;
-}
-
 @keyframes glitchout {
   0% {
     text-shadow: none;
@@ -506,123 +344,306 @@ p.project {
     opacity: 1;
   }
 }
-#bio.glitchin {
-  animation: glitchin 0.9s linear 1s both;
-}
+/* Smartphones (portrait and landscape) ———– */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Styles */
+  .container .right-sidebar {
+    top: 0;
+    right: 5vh;
+  }
 
-#bio.glitchout {
-  animation: glitchout 0.5s linear both;
-}
+  .right-sidebar li {
+    padding: 0 12px;
+  }
 
-#skills {
-  position: absolute;
-  width: 50vw;
-  transform: translatex(-35vh);
-}
+  .glitch {
+    font-size: 2.3em;
+  }
 
-#skills.glitch-in {
-  animation: glitchin 0.5s linear 1s both;
-}
+  .glitch::before {
+    bottom: 40px;
+  }
 
-#skills.glitch-out {
-  animation: glitchout 0.5s linear both;
-}
+  .glitch::after {
+    bottom: 40px;
+  }
 
-.contact-form {
-  background-color: rgba(0, 0, 0, 0.65) !important;
-}
+  h3 {
+    font-size: 2.2em !important;
+  }
 
-.textfield {
-  margin-left: 5%;
-}
+  .section-title {
+    padding: 1.5em 0;
+  }
 
-/* label color */
-.input-field label {
-  color: #ffffff;
-  padding-left: 1%;
+  #skills {
+    z-index: 0;
+  }
 }
+/* iPads (portrait and landscape) ———– */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles */
+  .right-sidebar {
+    top: 5%;
+    right: 35%;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0);
+    flex: 0 1 auto;
+  }
 
-/* label focus color */
-.input-field input[type=text]:focus + label {
-  color: #d500f9 !important;
+  .right-sidebar ul {
+    text-align: center;
+  }
+
+  .right-sidebar li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+
+  #skills {
+    position: absolute;
+    width: 70vw;
+    transform: translatex(2vh);
+  }
+
+  h3 {
+    font-size: 2.32 em;
+    letter-spacing: 0.1em;
+  }
+
+  .glitch {
+    font-size: 2.8em;
+  }
 }
+/* Desktops and laptops ———– */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
 
-/* label underline focus color */
-.input-field input[type=text]:focus {
-  border-bottom: 3px solid #d500f9 !important;
-  color: #fff;
-  box-shadow: 0 1px 0 0 #000;
-}
+  h2, h3 {
+    font-family: "VT323", monospace;
+    letter-spacing: 0.5em;
+    font-weight: 600 !important;
+  }
 
-/* label focus color */
-.input-field textarea:focus + label {
-  color: #d500f9 !important;
-}
+  p {
+    font-family: "VT323", monospace;
+    color: white !important;
+    line-height: 1.1em;
+    font-size: 1.5em;
+  }
 
-/* label underline focus color */
-.input-field textarea:focus {
-  border-bottom: 3px solid #d500f9 !important;
-  color: #fff;
-  box-shadow: 0 1px 0 0 #000;
-}
+  p.project {
+    font-size: 1.3em;
+  }
 
-.input-field input[type=text], .input-field textarea {
-  background-color: rgba(116, 116, 116, 0.3);
-  color: #fff;
-}
+  .section-title {
+    padding: 3% 0;
+  }
 
-.sendbtn {
-  width: 25%;
-  margin-left: 3%;
-  font-weight: 800 !important;
-  font-size: 1.5em;
-}
+  .chip {
+    font-size: 18px;
+  }
 
-.message-alert {
-  position: fixed;
-  top: 75vh;
-  z-index: 9999;
-  min-width: 80%;
-  -webkit-transition: opacity 3s ease-in-out;
-  -moz-transition: opacity 3s ease-in-out;
-  -ms-transition: opacity 3s ease-in-out;
-  -o-transition: opacity 3s ease-in-out;
-  opacity: 1;
-  transition-delay: 3s;
-}
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-.message-success, .message-error {
-  text-align: center;
-  padding: 10px 3% !important;
-  font-size: 1.3em !important;
-  min-height: 50px;
-  min-width: 70%;
-}
+  .about {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 3%;
+    background-image: linear-gradient(110deg, rgba(255, 0, 193, 0.3), black 60%), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
-.message-error {
-  background-color: #ef9a9a !important;
-}
+  .right-sidebar {
+    top: 35%;
+    right: 2%;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0);
+  }
 
-.message-success {
-  background-color: #80cbc4 !important;
-}
+  .right-sidebar li {
+    padding-bottom: 40%;
+  }
 
-.message-alert.fade-out {
-  opacity: 0;
-}
+  .projects {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/coding-1841550_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
-li.tab {
-  width: 20%;
-}
+  .contact {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(131, 22, 193, 0.6), rgba(131, 22, 193, 0.6)), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+  }
 
-.tabs .tab a {
-  color: #d500f9 !important;
-  opacity: 0.8;
-  font-weight: 600;
-}
+  .bio-icon:hover {
+    color: #d500f9;
+  }
 
-.tabs .indicator {
-  background-color: #d500f9 !important;
+  #bio.glitchin {
+    -webkit-animation: glitchin 0.9s linear 1s both;
+    -moz-animation: glitchin 0.9s linear 1s both;
+    -ms-animation: glitchin 0.9s linear 1s both;
+    -o-animation: glitchin 0.9s linear 1s both;
+    animation: glitchin 0.9s linear 1s both;
+  }
+
+  #bio.glitchout {
+    -webkit-animation: glitchout 0.5s linear both;
+    -moz-animation: glitchout 0.5s linear both;
+    -ms-animation: glitchout 0.5s linear both;
+    -o-animation: glitchout 0.5s linear both;
+    animation: glitchout 0.5s linear both;
+  }
+
+  #skills {
+    position: absolute;
+    width: 50vw;
+    transform: translatex(-35vh);
+  }
+
+  #skills.glitch-in {
+    -webkit-animation: glitchin 0.5s linear 1s both;
+    -moz-animation: glitchin 0.5s linear 1s both;
+    -ms-animation: glitchin 0.5s linear 1s both;
+    -o-animation: glitchin 0.5s linear 1s both;
+    animation: glitchin 0.5s linear 1s both;
+  }
+
+  #skills.glitch-out {
+    -webkit-animation: glitchout 0.5s linear both;
+    -moz-animation: glitchout 0.5s linear both;
+    -ms-animation: glitchout 0.5s linear both;
+    -o-animation: glitchout 0.5s linear both;
+    animation: glitchout 0.5s linear both;
+  }
+
+  .contact-form {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+  }
+
+  .textfield {
+    margin-left: 5%;
+  }
+
+  /* label color */
+  .input-field label {
+    color: #ffffff;
+    padding-left: 1%;
+  }
+
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #d500f9 !important;
+  }
+
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 3px solid #d500f9 !important;
+    color: #fff;
+    box-shadow: 0 1px 0 0 #000;
+  }
+
+  /* label focus color */
+  .input-field textarea:focus + label {
+    color: #d500f9 !important;
+  }
+
+  /* label underline focus color */
+  .input-field textarea:focus {
+    border-bottom: 3px solid #d500f9 !important;
+    color: #fff;
+    box-shadow: 0 1px 0 0 #000;
+  }
+
+  .input-field input[type=text], .input-field textarea {
+    background-color: rgba(116, 116, 116, 0.3);
+    color: #fff;
+  }
+
+  .sendbtn {
+    width: 25%;
+    margin-left: 3%;
+    font-weight: 800 !important;
+    font-size: 1.5em;
+  }
+
+  .message-alert {
+    position: fixed;
+    top: 75vh;
+    z-index: 9999;
+    min-width: 80%;
+    transition: opacity 3s ease-in-out;
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    opacity: 1;
+    transition-delay: 3s;
+  }
+
+  .message-success, .message-error {
+    text-align: center;
+    padding: 10px 3% !important;
+    font-size: 1.3em !important;
+    min-height: 50px;
+    min-width: 70%;
+  }
+
+  .message-error {
+    background-color: #ef9a9a !important;
+  }
+
+  .message-success {
+    background-color: #80cbc4 !important;
+  }
+
+  .message-alert.fade-out {
+    opacity: 0;
+  }
+
+  li.tab {
+    width: 20%;
+  }
+
+  .tabs .tab a {
+    color: #d500f9 !important;
+    opacity: 0.8;
+    font-weight: 600;
+  }
+
+  .tabs .indicator {
+    background-color: #d500f9 !important;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
