@@ -15,7 +15,8 @@ class Projects extends Component {
                         <div className="row">
                             <div id="html" className="col s12 m6 l3">
                                     <div class="white-text">
-                                        <h5 className="pink-text text-accent-3">HTML5/CSS3 Projects</h5>
+                                        <h6 className="pink-text text-accent-3">HTML5/CSS3 Projects</h6>
+                                        <hr/>
                                     </div>
                                         <ul>
                                             <li>FCC Technical Documentation-Page -
