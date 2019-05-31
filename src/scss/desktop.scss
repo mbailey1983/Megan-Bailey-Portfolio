@@ -110,7 +110,7 @@ body {
   #html {
     display: inline-block;
     background-image:
-      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/HTML5_Logo_512.png");
       @include background-image-contain();
     width: 100%;
@@ -122,7 +122,7 @@ body {
   #js {
     display: inline-block;
     background-image:
-      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-Unofficial_JavaScript_logo_2.svg.png");
       @include background-image-contain();
     width: 100%;
@@ -133,7 +133,7 @@ body {
 
   #react {
     background-image:
-      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-React-icon.svg.png");
       @include background-image-contain();
     width: 100%;
@@ -144,8 +144,8 @@ body {
 
   #wp {
     background-image:
-      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/WordPress-logotype-wmark.png");
+      linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/wplogoblue-notext-rgb.png");
       @include background-image-contain();
     width: 100%;
     height: 100%;
