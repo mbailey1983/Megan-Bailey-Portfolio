@@ -69,9 +69,13 @@ p {
  /* Layout & Section Styling */
 
   .loading {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background: #000;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .section-title {
