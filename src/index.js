@@ -9,6 +9,12 @@ import { RingLoader } from 'react-spinners'
 
 require('dotenv').config()
 
+const loader = css`
+  display: block;
+  margin: 0 auto;
+
+`
+
 class App extends Component {
   constructor() {
     super();
@@ -29,12 +35,14 @@ class App extends Component {
   render() {
     if (this.state.loading) {
       return (
-        <RingLoader
-        sizeUnit={"px"}
-        size={150}
-        color={'#ff00c1'}
-        loading={this.state.loading}
-        />
+        <div className="loading">
+          <RingLoader
+          sizeUnit={"px"}
+          size={150}
+          color={'#ff00c1'}
+          loading={this.state.loading}
+          />
+        </div>
       )
     } else {
     return (
