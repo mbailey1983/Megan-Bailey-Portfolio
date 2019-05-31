@@ -36,6 +36,27 @@ body {
     font-size: 1.3em;
   }
 
+#projects ul {
+    list-style: none;
+    padding-left: 0;
+}
+#projects li {
+    position: relative;
+    padding-left: 20px;
+}
+#projects li:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-image: url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/Glitch%20bullet.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
  /* Layout & Section Styling */
 
   .section-title {
