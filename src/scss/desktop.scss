@@ -172,6 +172,10 @@ p {
     max-height: 40vh;
   }
 
+  #projects .card:not(#html, #js, #react, #wp) {
+    height: 25vh !important;
+  }
+
   #contact {
     width: 100%;
     min-height: 100vh;
