@@ -7,6 +7,7 @@ import Contact from './components/Contact'
 import Nav from './components/Nav'
 import { css } from '@emotion/core';
 import { RingLoader } from 'react-spinners'
+import Footer from "./components/Footer";
 
 require('dotenv').config()
 
@@ -53,6 +54,7 @@ class App extends Component {
         <About />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     )
     }
