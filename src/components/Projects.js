@@ -33,8 +33,6 @@ class Projects extends Component {
                         </div>
                     </div>
 
-                    <div className="container">
-                        <div className="row">
                             <div className="col s12 m6 l3">
                                 <div id="js" class="card">
                                     <div class="card-content white-text">
@@ -52,13 +50,9 @@ class Projects extends Component {
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
 
-                    <div className="container">
-                        <div className="row">
                             <div className="col s12 m6 l3">
-                                <div id="react" class="card">
+                                <div id="react" class="card grey darken-4">
                                     <div class="card-content white-text">
                                         <span class="card-title">ReactJS Projects</span>
                                     </div>
@@ -78,13 +72,9 @@ class Projects extends Component {
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
 
-                    <div className="container">
-                        <div className="row">
                             <div className="col s12 m6 l3">
-                                <div id="wp" class="card">
+                                <div id="wp" class="card grey darken-4">
                                     <div class="card-content white-text">
                                         <span class="card-title">WordPress Projects</span>
                                     </div>
@@ -100,8 +90,6 @@ class Projects extends Component {
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
 
                                 <div className="row">
                                     <div className="col s12 m6 l6">
