@@ -84,7 +84,35 @@ body {
       url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/coding-1841550_1280.jpg');
     @include background-image();
   }
-  
+
+  #html {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/HTML5_Logo_512.png");
+      @include background-image();
+  }
+
+  #js {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-Unofficial_JavaScript_logo_2.svg.png");
+      @include background-image();
+  }
+
+  #react {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-React-icon.svg.png");
+      @include background-image();
+  }
+
+  #wp {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/WordPress-logotype-wmark.png");
+      @include background-image();
+  }
+
   #contact {
     width: 100%;
     min-height: 100vh;
