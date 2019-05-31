@@ -54,211 +54,211 @@ box to be used for the random glitch effect. Also adds a very subtle
 skew to change the 'thickness' of the glitch.*/
 @keyframes glitch-anim {
   0% {
-    clip: rect(18px, 9999px, 97px, 0);
-    transform: skew(0.4deg);
+    clip: rect(37px, 9999px, 38px, 0);
+    transform: skew(0.08deg);
   }
   5% {
-    clip: rect(84px, 9999px, 45px, 0);
-    transform: skew(0.18deg);
+    clip: rect(15px, 9999px, 2px, 0);
+    transform: skew(0.33deg);
   }
   10% {
-    clip: rect(33px, 9999px, 9px, 0);
-    transform: skew(0.1deg);
+    clip: rect(12px, 9999px, 36px, 0);
+    transform: skew(0.01deg);
   }
   15% {
-    clip: rect(66px, 9999px, 76px, 0);
-    transform: skew(0.85deg);
+    clip: rect(60px, 9999px, 87px, 0);
+    transform: skew(0.62deg);
   }
   20% {
-    clip: rect(74px, 9999px, 39px, 0);
-    transform: skew(0.8deg);
+    clip: rect(93px, 9999px, 39px, 0);
+    transform: skew(0.39deg);
   }
   25% {
-    clip: rect(14px, 9999px, 72px, 0);
-    transform: skew(0.35deg);
+    clip: rect(95px, 9999px, 75px, 0);
+    transform: skew(0.61deg);
   }
   30% {
-    clip: rect(35px, 9999px, 87px, 0);
-    transform: skew(0.46deg);
-  }
-  35% {
-    clip: rect(51px, 9999px, 37px, 0);
+    clip: rect(79px, 9999px, 60px, 0);
     transform: skew(0.65deg);
   }
+  35% {
+    clip: rect(65px, 9999px, 37px, 0);
+    transform: skew(0.41deg);
+  }
   40% {
-    clip: rect(12px, 9999px, 30px, 0);
-    transform: skew(0.97deg);
+    clip: rect(72px, 9999px, 94px, 0);
+    transform: skew(1deg);
   }
   45% {
-    clip: rect(85px, 9999px, 9px, 0);
-    transform: skew(0.69deg);
+    clip: rect(4px, 9999px, 11px, 0);
+    transform: skew(0.35deg);
   }
   50% {
-    clip: rect(87px, 9999px, 28px, 0);
-    transform: skew(0.51deg);
+    clip: rect(8px, 9999px, 40px, 0);
+    transform: skew(0.61deg);
   }
   55% {
-    clip: rect(49px, 9999px, 68px, 0);
-    transform: skew(0.42deg);
+    clip: rect(21px, 9999px, 23px, 0);
+    transform: skew(0.91deg);
   }
   60% {
-    clip: rect(81px, 9999px, 38px, 0);
-    transform: skew(0.93deg);
+    clip: rect(29px, 9999px, 61px, 0);
+    transform: skew(0.29deg);
   }
   65% {
-    clip: rect(89px, 9999px, 27px, 0);
-    transform: skew(0.56deg);
+    clip: rect(23px, 9999px, 7px, 0);
+    transform: skew(0.11deg);
   }
   70% {
-    clip: rect(80px, 9999px, 3px, 0);
-    transform: skew(0.5deg);
+    clip: rect(52px, 9999px, 38px, 0);
+    transform: skew(0.12deg);
   }
   75% {
-    clip: rect(87px, 9999px, 18px, 0);
-    transform: skew(0.79deg);
+    clip: rect(78px, 9999px, 6px, 0);
+    transform: skew(0.54deg);
   }
   80% {
-    clip: rect(33px, 9999px, 80px, 0);
-    transform: skew(0.76deg);
+    clip: rect(51px, 9999px, 52px, 0);
+    transform: skew(0.23deg);
   }
   85% {
-    clip: rect(91px, 9999px, 92px, 0);
-    transform: skew(0.76deg);
+    clip: rect(22px, 9999px, 16px, 0);
+    transform: skew(0.02deg);
   }
   90% {
-    clip: rect(38px, 9999px, 26px, 0);
-    transform: skew(0.8deg);
+    clip: rect(55px, 9999px, 67px, 0);
+    transform: skew(0.34deg);
   }
   95% {
-    clip: rect(73px, 9999px, 20px, 0);
-    transform: skew(0.6deg);
+    clip: rect(28px, 9999px, 1px, 0);
+    transform: skew(0.07deg);
   }
   100% {
-    clip: rect(38px, 9999px, 71px, 0);
-    transform: skew(0.51deg);
+    clip: rect(13px, 9999px, 64px, 0);
+    transform: skew(0.72deg);
   }
 }
 /* // Same deal, just duplicated for ultra randomness. */
 @keyframes glitch-anim2 {
   0% {
-    clip: rect(92px, 9999px, 97px, 0);
-    transform: skew(0.46deg);
+    clip: rect(84px, 9999px, 67px, 0);
+    transform: skew(0.05deg);
   }
   5% {
-    clip: rect(38px, 9999px, 41px, 0);
-    transform: skew(0.59deg);
+    clip: rect(46px, 9999px, 68px, 0);
+    transform: skew(0.66deg);
   }
   10% {
-    clip: rect(82px, 9999px, 86px, 0);
-    transform: skew(0.75deg);
+    clip: rect(93px, 9999px, 71px, 0);
+    transform: skew(0.2deg);
   }
   15% {
-    clip: rect(22px, 9999px, 20px, 0);
-    transform: skew(0.26deg);
+    clip: rect(73px, 9999px, 86px, 0);
+    transform: skew(0.58deg);
   }
   20% {
-    clip: rect(21px, 9999px, 65px, 0);
-    transform: skew(0.06deg);
+    clip: rect(62px, 9999px, 43px, 0);
+    transform: skew(0.3deg);
   }
   25% {
-    clip: rect(19px, 9999px, 31px, 0);
-    transform: skew(0.46deg);
+    clip: rect(51px, 9999px, 29px, 0);
+    transform: skew(0.6deg);
   }
   30% {
-    clip: rect(28px, 9999px, 74px, 0);
-    transform: skew(0.84deg);
+    clip: rect(48px, 9999px, 91px, 0);
+    transform: skew(0.64deg);
   }
   35% {
-    clip: rect(95px, 9999px, 74px, 0);
-    transform: skew(0.57deg);
+    clip: rect(23px, 9999px, 68px, 0);
+    transform: skew(0.28deg);
   }
   40% {
-    clip: rect(46px, 9999px, 44px, 0);
-    transform: skew(0.92deg);
+    clip: rect(98px, 9999px, 39px, 0);
+    transform: skew(0.77deg);
   }
   45% {
-    clip: rect(47px, 9999px, 54px, 0);
-    transform: skew(0.66deg);
+    clip: rect(46px, 9999px, 12px, 0);
+    transform: skew(0.17deg);
   }
   50% {
-    clip: rect(51px, 9999px, 31px, 0);
-    transform: skew(0.67deg);
+    clip: rect(13px, 9999px, 5px, 0);
+    transform: skew(0.01deg);
   }
   55% {
-    clip: rect(93px, 9999px, 44px, 0);
-    transform: skew(0.5deg);
+    clip: rect(22px, 9999px, 43px, 0);
+    transform: skew(0.43deg);
   }
   60% {
-    clip: rect(90px, 9999px, 84px, 0);
-    transform: skew(0.62deg);
+    clip: rect(35px, 9999px, 15px, 0);
+    transform: skew(0.18deg);
   }
   65% {
-    clip: rect(55px, 9999px, 83px, 0);
-    transform: skew(0.41deg);
+    clip: rect(74px, 9999px, 87px, 0);
+    transform: skew(0.27deg);
   }
   70% {
-    clip: rect(11px, 9999px, 3px, 0);
-    transform: skew(0.62deg);
+    clip: rect(53px, 9999px, 16px, 0);
+    transform: skew(0.93deg);
   }
   75% {
-    clip: rect(77px, 9999px, 88px, 0);
-    transform: skew(0.75deg);
+    clip: rect(56px, 9999px, 54px, 0);
+    transform: skew(0.9deg);
   }
   80% {
-    clip: rect(54px, 9999px, 87px, 0);
-    transform: skew(0.96deg);
+    clip: rect(55px, 9999px, 80px, 0);
+    transform: skew(0.52deg);
   }
   85% {
-    clip: rect(11px, 9999px, 28px, 0);
-    transform: skew(0.66deg);
+    clip: rect(87px, 9999px, 1px, 0);
+    transform: skew(0.69deg);
   }
   90% {
-    clip: rect(57px, 9999px, 22px, 0);
-    transform: skew(0.15deg);
+    clip: rect(9px, 9999px, 6px, 0);
+    transform: skew(0.88deg);
   }
   95% {
-    clip: rect(55px, 9999px, 93px, 0);
-    transform: skew(0.45deg);
+    clip: rect(6px, 9999px, 57px, 0);
+    transform: skew(0.15deg);
   }
   100% {
-    clip: rect(28px, 9999px, 16px, 0);
-    transform: skew(0.46deg);
+    clip: rect(54px, 9999px, 27px, 0);
+    transform: skew(0.73deg);
   }
 }
 /* // Does the same deal as before, but now only skews. Used for main text. */
 @keyframes glitch-skew {
   0% {
-    transform: skew(3deg);
-  }
-  10% {
-    transform: skew(-2deg);
-  }
-  20% {
-    transform: skew(1deg);
-  }
-  30% {
-    transform: skew(-1deg);
-  }
-  40% {
-    transform: skew(1deg);
-  }
-  50% {
-    transform: skew(4deg);
-  }
-  60% {
-    transform: skew(-4deg);
-  }
-  70% {
     transform: skew(0deg);
   }
+  10% {
+    transform: skew(3deg);
+  }
+  20% {
+    transform: skew(0deg);
+  }
+  30% {
+    transform: skew(0deg);
+  }
+  40% {
+    transform: skew(0deg);
+  }
+  50% {
+    transform: skew(-4deg);
+  }
+  60% {
+    transform: skew(2deg);
+  }
+  70% {
+    transform: skew(-1deg);
+  }
   80% {
-    transform: skew(-3deg);
+    transform: skew(0deg);
   }
   90% {
-    transform: skew(-4deg);
+    transform: skew(-3deg);
   }
   100% {
-    transform: skew(-4deg);
+    transform: skew(3deg);
   }
 }
 @keyframes glitchout {
@@ -456,7 +456,7 @@ p {
 #html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/HTML5_Logo_512.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: 100%;
   height: 100%;
@@ -465,7 +465,7 @@ p {
 #js {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-Unofficial_JavaScript_logo_2.svg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: 100%;
   height: 100%;
@@ -474,7 +474,7 @@ p {
 #react {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-React-icon.svg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: 100%;
   height: 100%;
@@ -483,7 +483,7 @@ p {
 #wp {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/WordPress-logotype-wmark.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: 100%;
   height: 100%;

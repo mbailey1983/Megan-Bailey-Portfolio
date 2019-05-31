@@ -68,7 +68,7 @@ body {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg.jpg");
-    @include background-image();
+    @include background-image-big();
     width: 100%;
     min-height: 100vh;
     @include flex-col-center();
@@ -82,7 +82,7 @@ body {
     background-image:
       linear-gradient(110deg, rgba(255,0,193, 0.3), rgba(0,0,0, 1) 60%),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/about-bg.jpg");
-    @include background-image();
+    @include background-image-big();
   }
   
   .right-sidebar {
@@ -103,14 +103,14 @@ body {
     background:
       linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
       url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/coding-1841550_1280.jpg');
-    @include background-image();
+    @include background-image-big();
   }
 
   #html {
     background-image:
       linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/HTML5_Logo_512.png");
-      @include background-image();
+      @include background-image-contain();
       width: 100%;
       height: 100%;
   }
@@ -119,7 +119,7 @@ body {
     background-image:
       linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-Unofficial_JavaScript_logo_2.svg.png");
-      @include background-image();
+      @include background-image-contain();
       width: 100%;
       height: 100%;
   }
@@ -128,7 +128,7 @@ body {
     background-image:
       linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-React-icon.svg.png");
-      @include background-image();
+      @include background-image-contain();
       width: 100%;
       height: 100%;
   }
@@ -137,7 +137,7 @@ body {
     background-image:
       linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/WordPress-logotype-wmark.png");
-      @include background-image();
+      @include background-image-contain();
       width: 100%;
       height: 100%;
   }
@@ -148,7 +148,7 @@ body {
     background-image:
       linear-gradient(rgba(131,22,193,0.6), rgba(131,22,193,0.6)),
       url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/contact-bg.jpg");
-    @include background-image();
+    @include background-image-big();
     background-blend-mode: multiply;
   }
   

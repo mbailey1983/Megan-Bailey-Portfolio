@@ -16,9 +16,15 @@ $teal: #00fff9;
   top: 0;
 }
 
-@mixin background-image() {
+@mixin background-image-big() {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+@mixin background-image-contain() {
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
 }
 
