@@ -85,8 +85,8 @@ p {
 
   footer li::before {
     content: '';
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     position: absolute;
     background-image: url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/Glitch%20Pngs%203%20%5BBEAPANDA%5D%20(1).png');
     background-size: cover;
@@ -94,6 +94,10 @@ p {
     left: 0;
     top: 20%;
     transform: translateY(-40%);
+  }
+
+  footer .glitch {
+    font-size: 1.4em;
   }
 
  /* Layout & Section Styling */
