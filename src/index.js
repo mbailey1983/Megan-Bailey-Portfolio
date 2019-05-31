@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Nav from './components/Nav'
+import { css } from '@emotion/core';
 import { RingLoader } from 'react-spinners'
 
 require('dotenv').config()
