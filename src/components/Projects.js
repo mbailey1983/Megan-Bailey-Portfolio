@@ -94,7 +94,7 @@ class Projects extends Component {
                                 <div className="row">
                                     <div className="container">
                                     <div className="col s12 m6 l6">
-                                        <div className="card small purple darken-4">
+                                        <div className="card cert small purple darken-4">
                                             <div className="card-content">
                                                 <span className="card-title grey-text text-lighten-3">Responsive Web Design Certification</span>
                                                 <hr/>
@@ -114,7 +114,7 @@ class Projects extends Component {
                                     </div>
 
                                     <div className="col s12 m6 l6">
-                                        <div className="card small purple darken-4">
+                                        <div className="card cert small purple darken-4">
                                             <div className="card-content">
                                                 <span className="card-title grey-text text-lighten-3">JavaScript Algorithms and Data Structures</span>
                                                 <hr/>
