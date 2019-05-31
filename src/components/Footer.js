@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
                 <div class="footer-copyright">
                 <div class="container center-align">
-                <p white-text>&copy; {new Date().getFullYear()&&document.write(new Date().getFullYear())}, Megan Bailey</p>
+                <p white-text>&copy; {new Date().getFullYear()}, Megan Bailey</p>
                 </div>
                 </div>
             </footer>
