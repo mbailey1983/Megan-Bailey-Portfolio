@@ -7,7 +7,7 @@ const Footer = () => {
                 <div class="container">
                 <div class="row">
                     <div class="col s12 m8 l6">
-                    <h5 class="white-text">Credits</h5>
+                    <h5 data-text="Credits" class="glitch white-text">Credits</h5>
                         <ul class="grey-text text-lighten-4">
                             <li>Glitch Text <a href="https://codepen.io/cipherbeta"
                             target="_blank" rel="noopener noreferrer">from Isaac Doud</a></li>
@@ -16,14 +16,14 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div class="col s12 m4 l6">
-                    <h5 class="white-text">See the Website's Code</h5>
-                    <button className="btn pink accent-3">Visit the Repo</button>
+                    <h5 data-text="See the Website's Code" class="glitch white-text">See the Website's Code</h5>
+                    <button className="btn purple accent-3">Visit the Repo</button>
                     </div>
                 </div>
                 </div>
                 <div class="footer-copyright">
                 <div class="container center-align">
-                <p white-text>&copy; <script>new Date().getFullYear()&&document.write(new Date().getFullYear());</script>, Megan Bailey</p>
+                <p white-text>&copy; {new Date().getFullYear()&&document.write(new Date().getFullYear())}, Megan Bailey</p>
                 </div>
                 </div>
             </footer>
