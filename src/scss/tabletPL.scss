@@ -20,11 +20,16 @@ p {
     font-size: 1.1em;
   }
 
+#bio p {
+    font-size: 1.6em;
+}
+
   /* Section Layout & Styling */
 
 .container > .right-sidebar {
-     top: 0;
-     right: 5vh;
+     top: 1%;
+     right: 30%;
+     left: 30%;
  }
 
  .right-sidebar ul {
@@ -39,7 +44,11 @@ p {
   #skills {
     position: absolute;
     width: 70vw;
-    transform: translatex(2vh);
+    transform: translateX(-30vw)
+  }
+
+  .section-title {
+      padding: 5% 0;
   }
 
 }

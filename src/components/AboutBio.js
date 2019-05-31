@@ -23,7 +23,7 @@ const Bio = (props) => {
                             <button target="_blank" href="https://github.com/rockstarcreativestudio" rel="noopener noreferrer" className="btn purple accent-3 waves-effect">
                             <i className="fab fa-5x fa-github"></i></button>
                         </div>
-                        <div className="col s12 m5 offset-m3 l4 offset-l1">
+                        <div className="col s12 m8 offset-m1 l4 offset-l1">
                         <button onClick={props.handleSwap} className="btn purple accent-3 waves-effect">My Current Skills</button>
                         </div>
                     </div>
@@ -82,7 +82,6 @@ const Skills = (props) => {
     handleSwap = () => {
         const bio = document.getElementById('bio');
         const skills = document.getElementById('skills');
-        console.log(bio, skills)
 
         if (this.state.comp === 'bio') {
             bio.classList.toggle('glitchin');
