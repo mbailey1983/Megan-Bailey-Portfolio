@@ -66,6 +66,36 @@ p {
     transform: translateY(-40%);
   }
 
+  footer ul {
+    list-style: none;
+    margin-left: -20px;;
+  }
+
+  footer li {
+    position: relative;
+    padding-left: 40px;
+    font-family: $code;
+    font-size: 1.2em;
+  }
+
+  footer li a {
+    color: $pink;
+    font-weight: 600;
+  }
+
+  footer li::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/Glitch%20Pngs%203%20%5BBEAPANDA%5D%20(1).png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 20%;
+    transform: translateY(-40%);
+  }
+
  /* Layout & Section Styling */
 
   .loading {
