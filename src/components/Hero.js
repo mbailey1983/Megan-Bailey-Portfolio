@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../img/hero-bg.jpg'
+import '../img/hero-bg-min.jpg'
 
 class Hero extends Component {
     render() {
