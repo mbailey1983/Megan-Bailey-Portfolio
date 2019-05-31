@@ -16,7 +16,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div class="col s12 m4 l6">
-                    <h5 data-text="See the Website's Code" class="glitch white-text">See the Code</h5>
+                    <h5 data-text="See the Code" class="glitch white-text">See the Code</h5>
                     <button className="btn purple accent-3">Visit the Repo</button>
                     </div>
                 </div>
