@@ -99,6 +99,9 @@ body {
     color: $bright-pink;
   }
 
+  #bio {
+      z-index: 2;
+  }
 
   #bio.glitchin {
     @include animation(glitchin 0.9s linear 1s both);
@@ -114,6 +117,7 @@ body {
     position: absolute;
     width: 50vw;
     transform: translatex(-35vh);
+    z-index: 0;
   }
 
   #skills.glitch-in {
