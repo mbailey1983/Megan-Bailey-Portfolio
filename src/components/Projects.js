@@ -78,10 +78,10 @@ class Projects extends Component {
                                         <span class="card-title">WordPress Projects</span>
                                         <hr/>
                                         <ul>
-                                            <li>Mindful Loving Book Client Website -
+                                            <li>Mindful Loving Book -
                                                 <a href="https://mindfullovingbook.com"
                                                 target="_blank" rel="noopener noreferrer">View the Website</a></li>
-                                            <li>ESHA Corp IT Client Website -
+                                            <li>ESHA Corp IT -
                                                 <a href="https://www.eshacorpit.com"
                                                 target="_blank" rel="noopener noreferrer">View the Website</a>
                                             </li>
