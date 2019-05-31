@@ -30,7 +30,7 @@ class App extends Component {
     if (this.state.loading) {
       return (
         <RingLoader
-        sizeUnit={px}
+        sizeUnit={"px"}
         size={150}
         color={'#ff00c1'}
         loading={this.state.loading}
