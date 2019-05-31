@@ -19,10 +19,10 @@ class Projects extends Component {
                                         <span className="card-title">HTML5/CSS3 Projects</span>
                                         <hr/>
                                         <ul>
-                                            <li>FCC Technical Documentation-Page -
+                                            <li>FCC Technical Documentation-Page <br/>
                                                 <a href="https://github.com/rockstarcreativestudio/FCC-Technical-HTML-Documentation-Page"
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a></li>
-                                            <li>FCC Personal Portfolio Page -
+                                            <li>FCC Personal Portfolio Page <br/>
                                                 <a href="https://github.com/rockstarcreativestudio/FCC-Personal-Portfolio-Page"
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a>
                                             </li>
@@ -37,10 +37,10 @@ class Projects extends Component {
                                         <span class="card-title">JavaScript Projects</span>
                                         <hr/>
                                         <ul>
-                                            <li>JavaScript30 Challenges -
+                                            <li>JavaScript30 Challenges <br/>
                                                 <a href="https://github.com/rockstarcreativestudio/Javascript30"
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a></li>
-                                            <li>FCC Snarky Quote Generator -
+                                            <li>FCC Snarky Quote Generator <br/>
                                                 <a href="https://github.com/rockstarcreativestudio/FCC-Snarky-Quote-Generator"
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a>
                                             </li>
@@ -56,14 +56,14 @@ class Projects extends Component {
                                         <span class="card-title">ReactJS Projects</span>
                                         <hr/>
                                         <ul>
-                                            <li>FCC Drum Kit -
+                                            <li>FCC Drum Kit <br/>
                                                 <a href="https://github.com/rockstarcreativestudio/FCC-Drum-Kit"
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a></li>
-                                            <li>FCC Calculator -
+                                            <li>FCC Calculator <br/>
                                                 <a href="https://github.com/rockstarcreativestudio/FCC-React-Calculator"
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a>
                                             </li>
-                                            <li>React Weather App -
+                                            <li>React Weather App <br/>
                                                 <a href="https://github.com/rockstarcreativestudio/React-Weather-App"
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a>
                                             </li>
@@ -78,10 +78,10 @@ class Projects extends Component {
                                         <span class="card-title">WordPress Projects</span>
                                         <hr/>
                                         <ul>
-                                            <li>Mindful Loving Book -
+                                            <li>Mindful Loving Book <br/>
                                                 <a href="https://mindfullovingbook.com"
                                                 target="_blank" rel="noopener noreferrer">View the Website</a></li>
-                                            <li>ESHA Corp IT -
+                                            <li>ESHA Corp IT <br/>
                                                 <a href="https://www.eshacorpit.com"
                                                 target="_blank" rel="noopener noreferrer">View the Website</a>
                                             </li>
