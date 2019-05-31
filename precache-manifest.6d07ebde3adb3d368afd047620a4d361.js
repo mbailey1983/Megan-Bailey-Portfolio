@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "713eed12f58fa0d1b4450b7fdfd1ea7f",
+    "revision": "65c9677aa0548aa843593d9f2a0ee359",
     "url": "/Megan-Bailey-Portfolio/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Megan-Bailey-Portfolio/static/js/2.3285a868.chunk.js"
   },
   {
-    "revision": "767a2729ec9d09f185a4",
-    "url": "/Megan-Bailey-Portfolio/static/js/main.df64ed96.chunk.js"
+    "revision": "2abc76f3db81e64d566d",
+    "url": "/Megan-Bailey-Portfolio/static/js/main.bf8cf4e0.chunk.js"
   },
   {
     "revision": "9ccf6a14ad8f908a7e37",
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Megan-Bailey-Portfolio/static/media/contact-bg.28ec23ec.jpg"
   },
   {
-    "revision": "a9942acbf2e7d61e27c9b7dfdeb9ae41",
-    "url": "/Megan-Bailey-Portfolio/static/media/hero-bg.a9942acb.jpg"
+    "revision": "deaa7162c4358d8b44152c1bdd36c2b1",
+    "url": "/Megan-Bailey-Portfolio/static/media/hero-bg-min.deaa7162.jpg"
   }
 ]);
