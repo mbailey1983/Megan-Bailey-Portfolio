@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Megan-Bailey-Portfolio/precache-manifest.1bda0ac18f227376a57f1f779a7e63be.js"
+  "/Megan-Bailey-Portfolio/precache-manifest.cc1a76eb9952000a9d256bb0648510cd.js"
 );
 
 self.addEventListener('message', (event) => {
