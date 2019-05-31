@@ -92,6 +92,7 @@ class Projects extends Component {
                         </div>
 
                                 <div className="row">
+                                    <div className="container">
                                     <div className="col s12 m6 l6">
                                         <div className="card small purple darken-4">
                                             <div className="card-content">
@@ -112,7 +113,6 @@ class Projects extends Component {
                                         </div>
                                     </div>
 
-                                    <div className="row">
                                     <div className="col s12 m6 l6">
                                         <div className="card small purple darken-4">
                                             <div className="card-content">
@@ -132,7 +132,6 @@ class Projects extends Component {
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
