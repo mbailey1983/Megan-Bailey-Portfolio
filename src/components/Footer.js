@@ -17,7 +17,7 @@ const Footer = () => {
                     </div>
                     <div class="col s12 m4 l6">
                     <h5 data-text="See the Code" class="glitch white-text">See the Code</h5>
-                    <button className="btn purple accent-3">Visit the Repo</button>
+                    <button href="https://github.com/rockstarcreativestudio/Megan-Bailey-Portfolio" className="btn purple accent-3">Visit the Repo</button>
                     </div>
                 </div>
                 </div>
