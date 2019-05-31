@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    setTime(() => {
+    setTimeout(() => {
       this.setState({
         loading: false
       })
