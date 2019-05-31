@@ -55,7 +55,6 @@ class Projects extends Component {
                                     <div class="card-content white-text">
                                         <span class="card-title">ReactJS Projects</span>
                                         <hr/>
-                                    </div>
                                         <ul>
                                             <li>FCC Drum Kit -
                                                 <a href="https://github.com/rockstarcreativestudio/FCC-Drum-Kit"
@@ -69,8 +68,8 @@ class Projects extends Component {
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a>
                                             </li>
                                         </ul>
+                                    </div>
                                 </div>
-
                             </div>
 
                             <div className="col s12 m6 l3">
@@ -78,7 +77,6 @@ class Projects extends Component {
                                     <div class="card-content white-text">
                                         <span class="card-title">WordPress Projects</span>
                                         <hr/>
-                                    </div>
                                         <ul>
                                             <li>Mindful Loving Book Client Website -
                                                 <a href="https://mindfullovingbook.com"
@@ -88,8 +86,8 @@ class Projects extends Component {
                                                 target="_blank" rel="noopener noreferrer">View the Website</a>
                                             </li>
                                         </ul>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
 
