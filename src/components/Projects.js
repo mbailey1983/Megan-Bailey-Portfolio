@@ -13,11 +13,11 @@ class Projects extends Component {
 
                     <div className="container">
                         <div className="row">
-                            <div id="html" className="col s12 m6 l3">
-                                    <div class="white-text">
-                                        <h6 className="pink-text text-accent-3">HTML5/CSS3 Projects</h6>
+                            <div className="col s12 m6 l3">
+                                <div id="html" class="card">
+                                    <div class="card-content white-text">
+                                        <span className="card-title pink-text text-accent-3">HTML5/CSS3 Projects</span>
                                         <hr/>
-                                    </div>
                                         <ul>
                                             <li>FCC Technical Documentation-Page -
                                                 <a href="https://github.com/rockstarcreativestudio/FCC-Technical-HTML-Documentation-Page"
@@ -27,14 +27,14 @@ class Projects extends Component {
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a>
                                             </li>
                                         </ul>
-
+                                    </div>
+                                </div>
                             </div>
 
                             <div className="col s12 m6 l3">
                                 <div id="js" class="card">
                                     <div class="card-content white-text">
                                         <span class="card-title">JavaScript Projects</span>
-                                    </div>
                                         <ul>
                                             <li>JavaScript30 Challenges -
                                                 <a href="https://github.com/rockstarcreativestudio/Javascript30"
@@ -44,6 +44,7 @@ class Projects extends Component {
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a>
                                             </li>
                                         </ul>
+                                    </div>
                                 </div>
 
                             </div>
