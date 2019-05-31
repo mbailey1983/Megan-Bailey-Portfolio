@@ -10,45 +10,53 @@ body {
   
  /* Typography */
 
- h1 {
+h1 {
      margin: 2.1rem 0 1.08rem 0;
- }
+  }
   
-  h2, h3 {
+h2, h3 {
+  font-family: $code;
+  letter-spacing: 0.5em;
+  font-weight: 600 !important;
+  }
+
+p {
     font-family: $code;
-    letter-spacing: 0.5em;
-    font-weight: 600 !important;
+    color: #fff;
+    font-size: 1em;
   }
 
-  p {
-      font-family: $code;
-      color: #fff;
-      font-size: 1em;
-  }
-
-  #skills .chip {
-      color: $teal !important;
-      font-weight: 600;
-      font-size: 18px;
-  }
-
-  #project p {
-    font-size: 1.3em;
+#skills .chip {
+    color: $teal !important;
+    font-weight: 600;
+    font-size: 18px;
   }
 
 #projects ul {
     list-style: none;
     margin-left: -20px;;
-}
+  }
+
 #projects li {
     position: relative;
     padding-left: 40px;
     font-family: $code;
+    font-size: 1.2em;
+  }
+
+#projects li a {
+  color: $pink;
+  font-weight: 600;
 }
+
+#projects .card {
+  background-color: rgba(0,0,0,0);
+}
+
 #projects li:before {
     content: '';
-    width: 24px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     background-image: url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/Glitch%20Pngs%203%20%5BBEAPANDA%5D%20(1).png');
     background-size: cover;
@@ -56,7 +64,7 @@ body {
     left: 0;
     top: 20%;
     transform: translateY(-40%);
-}
+  }
 
  /* Layout & Section Styling */
 
