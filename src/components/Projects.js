@@ -14,9 +14,9 @@ class Projects extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col s12 m6 l3">
-                                <div id="html" class="card">
-                                    <div class="card-content white-text">
-                                        <span class="card-title">HTML5/CSS3 Projects</span>
+                                <div id="html">
+                                    <div class="white-text">
+                                        <h5 className="pink-text text-accent-3">HTML5/CSS3 Projects</h5>
                                     </div>
                                         <ul>
                                             <li>FCC Technical Documentation-Page -
@@ -92,7 +92,7 @@ class Projects extends Component {
 
                                 <div className="row">
                                     <div className="col s12 m6 l6">
-                                        <div className="card medium purple darken-4">
+                                        <div className="card small horizontal purple darken-4">
                                             <div className="card-content">
                                                 <span className="card-title grey-text text-lighten-3">Responsive Web Design Certification</span>
                                                 <hr/>
@@ -113,7 +113,7 @@ class Projects extends Component {
 
                                     <div className="row">
                                     <div className="col s12 m6 l6">
-                                        <div className="card medium purple darken-4">
+                                        <div className="card small horizontal purple darken-4">
                                             <div className="card-content">
                                                 <span className="card-title grey-text text-lighten-3">JavaScript Algorithms and Data Structures</span>
                                                 <hr/>
