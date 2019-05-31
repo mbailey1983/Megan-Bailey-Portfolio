@@ -13,8 +13,7 @@ class Projects extends Component {
 
                     <div className="container">
                         <div className="row">
-                            <div className="col s12 m6 l3">
-                                <div id="html">
+                            <div id="html" className="col s12 m6 l3">
                                     <div class="white-text">
                                         <h5 className="pink-text text-accent-3">HTML5/CSS3 Projects</h5>
                                     </div>
@@ -27,7 +26,6 @@ class Projects extends Component {
                                                 target="_blank" rel="noopener noreferrer">View the Repo</a>
                                             </li>
                                         </ul>
-                                </div>
 
                             </div>
 
