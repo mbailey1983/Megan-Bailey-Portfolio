@@ -8,6 +8,5 @@ install:
 after_success:
   deploy:
     provider: firebase
-    token:
-      secure: $FIREBASE_TOKEN
+    token: $FIREBASE_TOKEN
     project: "megan-bailey-portfolio"
