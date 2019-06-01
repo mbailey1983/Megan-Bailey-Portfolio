@@ -36,18 +36,16 @@ class Contact extends Component {
             timestampsInSnapshots: true
         });
 
-        const contacts = db.collection("contact-submissions").add({
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message
-        });
-
         if (this.state.name === '' || this.state.email === '') {
             this.setState({
                 error: "Please enter your name or a valid email address."
             })
         } else {
-        ).then(res => {
+            const contacts = db.collection("contact-submissions").add({
+                name: this.state.name,
+                email: this.state.email,
+                message: this.state.message
+            }).then(res => {
             console.log('Wheeeeeeeeeee! It sent!')
             this.setState({
                 success: "You're message is on it's way!",
