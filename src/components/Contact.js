@@ -67,7 +67,6 @@ class Contact extends Component {
                     email: '',
                     message: '',
                 })
-    }
 }
 
     renderMsg = () => {
