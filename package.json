@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "firebase deploy --debug --token \"$REACT_APP_FIREBASE_TOKEN\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "watch": "sass --watch src/scss/index.scss:public/css/index.css",
