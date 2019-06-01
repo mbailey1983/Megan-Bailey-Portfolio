@@ -47,7 +47,7 @@ class Contact extends Component {
                 name: this.state.name,
                 email: this.state.email,
                 message: this.state.message
-            }).then(res => {
+            }).then(() => {
             console.log('Wheeeeeeeeeee! It sent!')
             this.setState({
                 success: "You're message is on it's way!",
@@ -99,7 +99,7 @@ class Contact extends Component {
                     <div className="row section-title">
                         <h1 data-text="Get In Touch" className="glitch center-align">Get In Touch</h1>
                     </div>
-                    <form className="container" onSubmit={this.handleSubmit}>
+                    <form className="container">
                         <div className="card-panel contact-form col s12">
                                 <div className="row">
                                     <div className="input-field col s12 m6 l6">
@@ -128,7 +128,8 @@ class Contact extends Component {
                                 <div className="row">
                                     <div className="input-field col s12">
                                         <button type="submit"
-                                        className="sendbtn btn purple accent-3 black-text waves-effect"><strong>Send</strong></button>
+                                        className="sendbtn btn purple accent-3 black-text waves-effect"
+                                        onClick={this.handleSubmit}><strong>Send</strong></button>
                                     </div>
                                     <div className="col s12">
                                         {this.renderMsg()}
