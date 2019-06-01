@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import * as emailjs from 'emailjs-com'
 import '../img/contact-bg.jpg'
 import firebase from 'firebase'
-import { Firestore } from '../../firebase/Firestore'
+import { Firestore } from '../firebase/Firestore'
 
 const rEmail = process.env.REACT_APP_EMAILJS_RECEIVER;
 const template = process.env.REACT_APP_EMAILJS_TEMPLATEID;
