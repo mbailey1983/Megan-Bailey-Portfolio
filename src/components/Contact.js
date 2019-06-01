@@ -38,11 +38,11 @@ class Contact extends Component {
             timestampsInSnapshots: true
         });
 
-        if (this.state.name === '' || this.state.email === '') {
+       /*  if (this.state.name === '' || this.state.email === '') {
             this.setState({
                 error: "Please enter your name or a valid email address."
             })
-        } else {
+        } else { */
             const contacts = db.collection("contact-submissions").add({
                 name: this.state.name,
                 email: this.state.email,
