@@ -30,26 +30,23 @@ class Contact extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
 
-        const { name, email, message } = this.state;
+        const db = firebase.firestore();
 
-        let templateParams = {
-            name: name,
-            to_name: rEmail,
-            email: email,
-            message_html: message
-        }
+        db.settings({
+            timestampsInSnapshots: true
+        });
+
+        const contacts = db.collection("contact-submissions").add({
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message
+        });
 
         if (this.state.name === '' || this.state.email === '') {
             this.setState({
                 error: "Please enter your name or a valid email address."
             })
         } else {
-
-        emailjs.send(
-            'sendgrid',
-            template,
-            templateParams,
-            userId
         ).then(res => {
             console.log('Wheeeeeeeeeee! It sent!')
             this.setState({
