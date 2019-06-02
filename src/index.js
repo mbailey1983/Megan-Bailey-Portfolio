@@ -32,7 +32,8 @@ class App extends Component {
       this.setState({
         loading: false
       })
-    }, 2000)
+    }, 2000);
+
     $(document).ready(function(){
       $('.scrollspy').scrollSpy({
         scrollOffset: 0
