@@ -60,7 +60,7 @@ class App extends Component {
         <Hero />
         <About />
         <Projects />
-        {/* <Contact /> */}
+        <Contact />
         <Footer />
       </div>
     )
