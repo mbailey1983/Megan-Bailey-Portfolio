@@ -8,6 +8,7 @@ import Nav from './components/Nav'
 import { css } from '@emotion/core';
 import { RingLoader } from 'react-spinners'
 import Footer from "./components/Footer";
+import $ from 'jquery';
 
 require('dotenv').config()
 
@@ -32,6 +33,11 @@ class App extends Component {
         loading: false
       })
     }, 2000)
+    $(document).ready(function(){
+      $('.scrollspy').scrollSpy({
+        scrollOffset: 0
+      });
+    });
   };
 
   render() {
