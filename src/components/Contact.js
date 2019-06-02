@@ -29,10 +29,6 @@ class Contact extends Component {
 
         const db = firebase.firestore();
 
-        db.settings({
-            timestampsInSnapshots: true
-        });
-
        /*  if (this.state.name === '' || this.state.email === '') {
             this.setState({
                 error: "Please enter your name or a valid email address."
