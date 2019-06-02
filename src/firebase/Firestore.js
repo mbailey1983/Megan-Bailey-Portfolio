@@ -1,15 +1,16 @@
 import firebase from 'firebase'
+import 'firebase/firestore'
 
-var firebaseConfig = {
+const config = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: "megan-bailey-portfolio.firebaseapp.com",
-    databaseURL: "https://megan-bailey-portfolio.firebaseio.com",
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_FIREBASE_DATABASEURL,
     projectId: "megan-bailey-portfolio",
     storageBucket: "megan-bailey-portfolio.appspot.com",
-    messagingSenderId: "530455761432",
-    appId: "1:530455761432:web:5ff6b06f7331cf1c"
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MSGSENDINGID,
+    appId: process.env.REACT_APP_FIREBASE_APPID
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(config);
 
   export default firebase;
