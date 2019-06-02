@@ -7,7 +7,9 @@ import Contact from './components/Contact'
 import Nav from './components/Nav'
 import { css } from '@emotion/core';
 import { RingLoader } from 'react-spinners'
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"
+import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css'
 
 require('dotenv').config()
 
