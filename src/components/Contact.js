@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import * as emailjs from 'emailjs-com'
 import '../img/contact-bg.jpg'
-import firebase from 'firebase'
+import firebase from '../firebase/Firestore'
 
 class Contact extends Component {
     constructor() {
@@ -27,19 +27,19 @@ class Contact extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
 
-        const db = firebase.firestore();
+        const { name, email, message } = this.state;
 
-       /*  if (this.state.name === '' || this.state.email === '') {
+       if (this.state.name === '' || this.state.email === '') {
             this.setState({
                 error: "Please enter your name or a valid email address."
             })
-        } else { */
-            const contacts = db.collection("contact-submissions").add({
-                name: this.state.name,
-                email: this.state.email,
-                message: this.state.message
-            }).then(() => {
-            console.log('Wheeeeeeeeeee! It sent!')
+        } else {
+            firebase.firestore().collection("contact-submissions").add({
+                name,
+                email,
+                message
+            }).then((docRef) => {
+            console.log('Wheeeeeeeeeee! It sent!' + docRef)
             this.setState({
                 success: "You're message is on it's way!",
                 error: ''
@@ -90,7 +90,7 @@ class Contact extends Component {
                     <div className="row section-title">
                         <h1 data-text="Get In Touch" className="glitch center-align">Get In Touch</h1>
                     </div>
-                    <form className="container">
+                    <form className="container" onSubmit={this.handleSubmit}>
                         <div className="card-panel contact-form col s12">
                                 <div className="row">
                                     <div className="input-field col s12 m6 l6">
@@ -120,7 +120,7 @@ class Contact extends Component {
                                     <div className="input-field col s12">
                                         <button type="submit"
                                         className="sendbtn btn purple accent-3 black-text waves-effect"
-                                        onClick={this.handleSubmit}><strong>Send</strong></button>
+                                        ><strong>Send</strong></button>
                                     </div>
                                     <div className="col s12">
                                         {this.renderMsg()}
