@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import '../img/contact-bg.jpg'
 import * as emailjs from 'emailjs-com'
 
+const rEmail = process.env.REACT_APP_EMAILJS_RECEIVER;
+const template = process.env.REACT_APP_EMAILJS_TEMPLATEID;
+const userId = process.env.REACT_APP_EMAILJS_USERID;
+
 class Contact extends Component {
     constructor() {
         super();
