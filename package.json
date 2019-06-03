@@ -6,6 +6,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "docker": "^1.0.0",
+    "emailjs-com": "^2.3.2",
     "firebase": "^6.1.0",
     "gh-pages": "^2.0.1",
     "materialize-css": "^1.0.0-rc.2",
