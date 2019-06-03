@@ -28,19 +28,27 @@ class App extends Component {
     }
   }
 
-  componentDidMount = () => {
+  handleSpinnerTimeout = () => {
     setTimeout(() => {
       this.setState({
         loading: false
       })
     }, 2000);
+  }
 
+  handleScrollspy = () => {
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.scrollspy');
       var instances = M.ScrollSpy.init(elems, {
         scrollOffset: 0
       });
     });
+  }
+
+
+  componentDidMount = () => {
+    this.handleSpinnerTimeout();
+    this.handleScrollspy();
   }
 
   render() {
