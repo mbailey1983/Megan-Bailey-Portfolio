@@ -1,5 +1,7 @@
 {
-    "extends": "airbnb",  
+    "extends": ["airbnb", "prettier"],
+    "plugins": ["prettier"],
+    "prettier/prettier": ["error"],  
     "parser": "babel-eslint",  
     "env": 
       {    
@@ -8,8 +10,9 @@
         "browser": true  
       },  
     "rules": 
-      {    
+      {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],    
+        "prettier/prettier": ["error"],
         "implicit-arrow-linebreak": "off",    
         "comma-dangle": "off",    
         "indent": "off",    
