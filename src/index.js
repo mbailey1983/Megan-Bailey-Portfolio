@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
-import { Nav,
-         Hero,
-         About,
-         Projects,
-         Contact,
-         Footer
-      } from './components'
-import { css } from '@emotion/core';
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import { css } from '@emotion/core'
 import { RingLoader } from 'react-spinners'
-import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
 
 require('dotenv').config()
