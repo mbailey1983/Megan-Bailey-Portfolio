@@ -226,6 +226,7 @@ p {
 
   #bio {
       z-index: 2;
+      position: relative;
   }
 
   #bio.glitchin {
@@ -240,8 +241,8 @@ p {
 
   #skills {
     position: absolute;
-    width: 50vw;
-    transform: translatex(-35vh);
+    width: 75vw;
+    transform: translatex(-60vh);
     z-index: 0;
   }
 
@@ -335,19 +336,4 @@ p {
   
   .message-alert.fade-out {
     opacity: 0;
-  }
-  
-  /* Tabs Styling */
-  li.tab {
-    width: 20%;
-  }
-  
-  .tabs .tab a {
-    color: $bright-pink !important;
-    opacity: 0.8;
-    font-weight: 600;
-  }
-  
-  .tabs .indicator {
-    background-color: $bright-pink !important;
   }
