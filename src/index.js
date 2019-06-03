@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
-import About from './components/About'
-import Hero from './components/Hero'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Nav from './components/Nav'
+import { Nav,
+         Hero,
+         About,
+         Projects,
+         Contact,
+         Footer
+      } from './components'
 import { css } from '@emotion/core';
 import { RingLoader } from 'react-spinners'
-import Footer from "./components/Footer"
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css'
 
