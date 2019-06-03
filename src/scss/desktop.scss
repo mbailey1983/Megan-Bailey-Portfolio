@@ -229,6 +229,10 @@ p {
       position: relative;
   }
 
+  #bio p {
+    font-size: 1.2em;
+  }
+
   #bio.glitchin {
     @include animation(glitchin 0.9s linear 1s both);
   }
