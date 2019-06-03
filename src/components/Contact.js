@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../img/contact-bg.jpg'
-import firebase from '../firebase/Firestore'
+import * as emailjs from 'emailjs-com'
 
 class Contact extends Component {
     constructor() {
@@ -28,17 +28,26 @@ class Contact extends Component {
 
         const { name, email, message } = this.state;
 
-       if (this.state.name === '' || this.state.email === '') {
+        let templateParams = {
+            name: name,
+            to_name: rEmail,
+            email: email,
+            message_html: message
+        }
+
+        if (this.state.name === '' || this.state.email === '') {
             this.setState({
                 error: "Please enter your name or a valid email address."
             })
         } else {
-            firebase.firestore().collection("contact-submissions").add({
-                name,
-                email,
-                message
-            }).then((docRef) => {
-            console.log('Wheeeeeeeeeee! It sent!' + docRef)
+
+        emailjs.send(
+            'sendgrid',
+            template,
+            templateParams,
+            userId
+        ).then(res => {
+            console.log('Wheeeeeeeeeee! It sent!')
             this.setState({
                 success: "You're message is on it's way!",
                 error: ''
@@ -57,8 +66,8 @@ class Contact extends Component {
                     email: '',
                     message: '',
                 })
-        }
     }
+}
 
     renderMsg = () => {
         if (this.state.error) {
