@@ -1,6 +1,6 @@
 const initialState = {};
 
-const contactReducer = (state = initialState, { type, payload }) => {
+const contactReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'NEW_CONTACT':
       console.log('Wheeeeeee! It sent!');
