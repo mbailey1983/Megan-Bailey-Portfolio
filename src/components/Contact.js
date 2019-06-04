@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import '../img/contact-bg.jpg';
-import * as emailjs from 'emailjs-com';
-
-const rEmail = process.env.REACT_APP_EMAILJS_RECEIVER;
-const template = process.env.REACT_APP_EMAILJS_TEMPLATEID;
-const userId = process.env.REACT_APP_EMAILJS_USERID;
+import newContact from '../store/actions/contactActions';
+import { connect } from 'react-redux';
 
 class Contact extends Component {
   constructor() {
@@ -29,22 +26,13 @@ class Contact extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    const { name, email, message } = this.state;
-
-    let templateParams = {
-      name: name,
-      to_name: rEmail,
-      email: email,
-      message_html: message
-    };
-
     if (this.state.name === '' || this.state.email === '') {
       this.setState({
         error: 'Please enter your name or a valid email address.'
       });
     } else {
-      emailjs
-        .send('sendgrid', template, templateParams, userId)
+      this.props
+        .newContact(this.state)
         .then(res => {
           console.log('Wheeeeeeeeeee! It sent!');
           this.setState({
@@ -63,7 +51,8 @@ class Contact extends Component {
       this.setState({
         name: '',
         email: '',
-        message: ''
+        message: '',
+        error: ''
       });
     }
   };
@@ -156,4 +145,13 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+const mapDispatchToProps = dispatch => {
+  return {
+    newContact: contact => dispatch(newContact(contact))
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Contact);

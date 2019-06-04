@@ -6,17 +6,26 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import { css } from '@emotion/core';
 import { RingLoader } from 'react-spinners';
 import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css';
+import { createStore, applyMiddleware, compose } from 'redux';
+import rootReducer from './store/reducers/rootreducer';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import { getFirestore, reduxFirestore } from 'redux-firestore';
+import { getFirebase, reactReduxFirebase } from 'react-redux-firebase';
+import Firestore from './firebase/Firestore';
 
 require('dotenv').config();
 
-const loader = css`
-  display: block;
-  margin: 0 auto;
-`;
+const store = createStore(
+  rootReducer,
+  compose(
+    applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
+    reduxFirestore(Firestore),
+    reactReduxFirebase(Firestore)
+  )
+);
 
 class App extends Component {
   constructor() {
@@ -35,18 +44,8 @@ class App extends Component {
     }, 2000);
   };
 
-  handleScrollspy = () => {
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.scrollspy');
-      var instances = M.ScrollSpy.init(elems, {
-        scrollOffset: 0
-      });
-    });
-  };
-
   componentDidMount = () => {
     this.handleSpinnerTimeout();
-    this.handleScrollspy();
   };
 
   render() {
@@ -71,4 +70,9 @@ class App extends Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
