@@ -3,46 +3,47 @@
 /* Styles */
 
 body {
-    width: 100vw;
-    min-height: 100vh;
-    overflow-x: hidden
-  }
-  
- /* Typography */
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Typography */
 
 h1 {
-     margin: 2.1rem 0 1.08rem 0;
-  }
-  
-h2, h3 {
+  margin: 2.1rem 0 1.08rem 0;
+}
+
+h2,
+h3 {
   font-family: $code;
   letter-spacing: 0.5em;
   font-weight: 600 !important;
-  }
+}
 
 p {
-    font-family: $code;
-    color: #fff;
-    font-size: 1em;
-  }
+  font-family: $code;
+  color: #fff;
+  font-size: 1em;
+}
 
 #skills .chip {
-    color: $teal !important;
-    font-weight: 600;
-    font-size: 18px;
-  }
+  color: $teal !important;
+  font-weight: 600;
+  font-size: 18px;
+}
 
 #projects ul {
-    list-style: none;
-    margin-left: -20px;;
-  }
+  list-style: none;
+  margin-left: -20px;
+}
 
 #projects li {
-    position: relative;
-    padding-left: 40px;
-    font-family: $code;
-    font-size: 1.2em;
-  }
+  position: relative;
+  padding-left: 40px;
+  font-family: $code;
+  font-size: 1.2em;
+}
 
 #projects li a {
   color: $pink;
@@ -50,294 +51,288 @@ p {
 }
 
 #projects .card {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #projects li:before {
-    content: '';
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background-image: url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/Glitch%20Pngs%203%20%5BBEAPANDA%5D%20(1).png');
-    background-size: cover;
-    background-position: center;
-    left: 0;
-    top: 20%;
-    transform: translateY(-40%);
-  }
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/Glitch%20Pngs%203%20%5BBEAPANDA%5D%20(1).png');
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 20%;
+  transform: translateY(-40%);
+}
 
-  footer ul {
-    list-style: none;
-    margin-left: -20px;;
-  }
+footer ul {
+  list-style: none;
+  margin-left: -20px;
+}
 
-  footer li {
-    position: relative;
-    padding-left: 40px;
-    font-family: $code;
-    font-size: 1.2em;
-  }
+footer li {
+  position: relative;
+  padding-left: 40px;
+  font-family: $code;
+  font-size: 1.2em;
+}
 
-  footer li a {
-    color: $pink;
-    font-weight: 600;
-  }
+footer li a {
+  color: $pink;
+  font-weight: 600;
+}
 
-  footer li::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    background-image: url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/Glitch%20Pngs%203%20%5BBEAPANDA%5D%20(1).png');
-    background-size: cover;
-    background-position: center;
-    left: 0;
-    top: 20%;
-    transform: translateY(-40%);
-  }
+footer li::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/Glitch%20Pngs%203%20%5BBEAPANDA%5D%20(1).png');
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 20%;
+  transform: translateY(-40%);
+}
 
-  footer .glitch {
-    font-size: 1.4em;
-  }
+footer .glitch {
+  font-size: 1.4em;
+}
 
- /* Layout & Section Styling */
+/* Layout & Section Styling */
 
-  .loading {
-    height: 100vh;
-    width: 100%;
-    background: #000;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+.loading {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  .section-title {
-    position: relative;
-    padding: 3% 0;
-  }
-  
-  #home {
-    background: #000;
-    background-image:
-      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg-min.jpg"),
-      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    @include background-image();
-    width: 100%;
-    min-height: 100vh;
-    @include flex-col-center();
-  }
-  
-  #about {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding-top: 3%;
-    background-image:
-      linear-gradient(110deg, rgba(255,0,193, 0.3), rgba(0,0,0, 1) 60%),
-      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/about-bg.jpg");
-    @include background-image();
-  }
-  
-  .right-sidebar {
-    top: 35%;
-    right: 2%;
-    position: fixed;
-    z-index: 999;
-    background: rgba(0,0,0,0);
-  }
-  
-  .right-sidebar li {
-    padding-bottom: 40%;
-  }
-  
-  #projects {
-    width: 100%;
-    min-height: 100vh;
-    background:
-      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-      url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/coding-1841550_1280.jpg');
-    @include background-image();
-  }
+.section-title {
+  position: relative;
+  padding: 3% 0;
+}
 
-  #html {
-    display: inline-block;
-    background-image:
-      linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/HTML5_Logo_512.png");
-      @include background-image();
-    width: 100%;
-    height: 100%;
-    max-width: 100vw;
-    max-height: 40vh;
-  }
+#home {
+  background: #000;
+  background-image: url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/hero-bg-min.jpg'),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  @include background-image();
+  width: 100%;
+  min-height: 100vh;
+  @include flex-col-center();
+}
 
-  #js {
-    display: inline-block;
-    background-image:
-      linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-Unofficial_JavaScript_logo_2.svg.png");
-      @include background-image();
-    width: 100%;
-    height: 100%;
-    max-width: 100vw;
-    max-height: 40vh;
-  }
+#about {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 3%;
+  background-image: linear-gradient(110deg, rgba(255, 0, 193, 0.3), rgba(0, 0, 0, 1) 60%),
+    url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/about-bg.jpg');
+  @include background-image();
+}
 
-  #react {
-    background-image:
-      linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-React-icon.svg.png");
-      @include background-image();
-    width: 100%;
-    height: 100%;
-    max-width: 100vw;
-    max-height: 40vh;
-  }
+.right-sidebar {
+  top: 35%;
+  right: 2%;
+  position: fixed;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0);
+}
 
-  #wp {
-    background-image:
-      linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/wplogoblue-notext-rgb.png");
-      @include background-image();
-    width: 100%;
-    height: 100%;
-    max-width: 100vw;
-    max-height: 40vh;
-  }
+.right-sidebar li {
+  padding-bottom: 40%;
+}
 
-  .cert {
-    height: 25vh !important;
-  }
+#projects {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/coding-1841550_1280.jpg');
+  @include background-image();
+}
 
-  #contact {
-    width: 100%;
-    min-height: 100vh;
-    background-image:
-      linear-gradient(rgba(131,22,193,0.6), rgba(131,22,193,0.6)),
-      url("https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/contact-bg.jpg");
-    @include background-image();
-    background-blend-mode: multiply;
-  }
-  
-  .bio-icon:hover {
-    color: $bright-pink;
-  }
+#html {
+  display: inline-block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/HTML5_Logo_512.png');
+  @include background-image();
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 40vh;
+}
 
-  #bio {
-      z-index: 2;
-      position: relative;
-  }
+#js {
+  display: inline-block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-Unofficial_JavaScript_logo_2.svg.png');
+  @include background-image();
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 40vh;
+}
 
-  #bio p {
-    font-size: 1.2em;
-  }
+#react {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/500px-React-icon.svg.png');
+  @include background-image();
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 40vh;
+}
 
-  #bio.glitchin {
-    @include animation(glitchin 0.9s linear 1s both);
-  }
+#wp {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/wplogoblue-notext-rgb.png');
+  @include background-image();
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 40vh;
+}
 
-  #bio.glitchout {
-    @include animation (glitchout 0.5s linear both);
-  }
-  
-  /*  Slide In/Out Skills */
+.cert {
+  height: 25vh !important;
+}
 
-  #skills {
-    position: absolute;
-    width: 75vw;
-    transform: translatex(-60vh);
-    z-index: 0;
-  }
+#contact {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(131, 22, 193, 0.6), rgba(131, 22, 193, 0.6)),
+    url('https://raw.githubusercontent.com/rockstarcreativestudio/Megan-Bailey-Portfolio/master/src/img/contact-bg.jpg');
+  @include background-image();
+  background-blend-mode: multiply;
+}
 
-  #skills.glitch-in {
-   @include animation (glitchin 0.5s linear 1s both);
-  }
+.bio-icon:hover {
+  color: $bright-pink;
+}
 
-  #skills.glitch-out {
-   @include animation (glitchout 0.5s linear both);
-  }
+#bio {
+  z-index: 2;
+  position: relative;
+}
 
-  /* Forms Styling */
+#bio p {
+  font-size: 1.2em;
+}
 
-  .contact-form {
-    background-color: rgba(0, 0, 0, 0.65) !important;
-  }
+#bio.glitchin {
+  @include animation(glitchin 0.9s linear 1s both);
+}
 
-  .textfield {
-    margin-left: 5%;
-  }
+#bio.glitchout {
+  @include animation(glitchout 0.5s linear both);
+}
 
-   /* label color */
-   .input-field label {
-    color: #ffffff;
-    padding-left: 1%;
-  }
-  /* label focus color */
-  .input-field input[type=text]:focus + label {
-    color: $bright-pink !important;
-  }
-  /* label underline focus color */
-  .input-field input[type=text]:focus {
-    border-bottom: 3px solid $bright-pink !important;
-    color: #fff;
-    box-shadow: 0 1px 0 0 #000;
-  }
+/*  Slide In/Out Skills */
 
-  /* label focus color */
-  .input-field textarea:focus + label {
-    color: $bright-pink !important;
-  }
-  /* label underline focus color */
-  .input-field textarea:focus {
-    border-bottom: 3px solid $bright-pink !important;
-    color: #fff;
-    box-shadow: 0 1px 0 0 #000;
-  }
+#skills {
+  position: absolute;
+  width: 75vw;
+  transform: translatex(-60vh);
+  z-index: 0;
+}
 
-  .input-field input[type=text], .input-field textarea {
-    background-color: rgba(116, 116, 116, 0.3);
-    color: #fff;
-  }
+#skills.glitch-in {
+  @include animation(glitchin 0.5s linear 1s both);
+}
 
-  .sendbtn {
-    width: 25%;
-    margin-left:3%;
-    font-weight: 800 !important;
-    font-size: 1.5em;
-  }
+#skills.glitch-out {
+  @include animation(glitchout 0.5s linear both);
+}
 
-  .message-alert {
-    position: relative;
-    z-index: 9999;
-    min-width: 80%;
-    @include transition-opacity(opacity 3s ease-in-out);
-    opacity: 1;
-    transition-delay: 3s;
-    margin: 0.8em 0;
-  }
-  
-  .message-success, .message-error {
-    text-align: center;
-    padding: 10px 3% !important;
-    font-size: 1.3em !important;
-    min-height: 50px;
-    min-width: 70%;
-  }
+/* Forms Styling */
 
-  .chip .message-success, .chip .message-error {
-      display: inline-flex !important;
-      height: auto;
-  }
-  
-  .message-error {
-    background-color: #ef9a9a !important;
-  }
-  
-  .message-success {
-    background-color: #80cbc4 !important;
-  }
-  
-  .message-alert.fade-out {
-    opacity: 0;
-  }
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.textfield {
+  margin-left: 5%;
+}
+
+/* label color */
+.input-field label {
+  color: #ffffff;
+  padding-left: 1%;
+}
+/* label focus color */
+.input-field input[type='text']:focus + label {
+  color: $bright-pink !important;
+}
+/* label underline focus color */
+.input-field input[type='text']:focus {
+  border-bottom: 3px solid $bright-pink !important;
+  color: #fff;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* label focus color */
+.input-field textarea:focus + label {
+  color: $bright-pink !important;
+}
+/* label underline focus color */
+.input-field textarea:focus {
+  border-bottom: 3px solid $bright-pink !important;
+  color: #fff;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+.input-field input[type='text'],
+.input-field textarea {
+  background-color: rgba(116, 116, 116, 0.3);
+  color: #fff;
+}
+
+.sendbtn {
+  width: 25%;
+  margin-left: 3%;
+  font-weight: 800 !important;
+  font-size: 1.5em;
+}
+
+.message-alert {
+  position: relative;
+  z-index: 9999;
+  min-width: 80%;
+  @include transition-opacity(opacity 3s ease-in-out 5s);
+  opacity: 1;
+  margin: 0.8em 0;
+}
+
+.message-success,
+.message-error {
+  text-align: center;
+  padding: 10px 3% !important;
+  font-size: 1.3em !important;
+  min-height: 50px;
+  min-width: 70%;
+}
+
+.chip .message-success,
+.chip .message-error {
+  display: inline-flex !important;
+  height: auto;
+}
+
+.message-error {
+  background-color: #ef9a9a !important;
+}
+
+.message-success {
+  background-color: #80cbc4 !important;
+}
+
+.fade-out {
+  opacity: 0;
+}
