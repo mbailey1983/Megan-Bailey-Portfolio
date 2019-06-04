@@ -1,5 +1,5 @@
-export default (newContact = contact => {
-  return (dispatch, getState, { getFirebase, getFirestore }) => {
+export const newContact = contact => {
+  return (dispatch, { getFirebase, getFirestore }) => {
     // get async call to database
     const firestore = getFirestore();
     firestore
@@ -21,4 +21,4 @@ export default (newContact = contact => {
         });
       });
   };
-});
+};

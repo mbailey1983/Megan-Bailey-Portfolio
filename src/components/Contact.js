@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../img/contact-bg.jpg';
-import newContact from '../store/actions/contactActions';
+import { newContact } from '../store/actions/contactActions';
 import { connect } from 'react-redux';
 
 class Contact extends Component {
