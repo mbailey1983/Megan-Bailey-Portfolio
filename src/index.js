@@ -8,24 +8,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { RingLoader } from 'react-spinners';
 import 'materialize-css/dist/css/materialize.min.css';
-import { createStore, applyMiddleware, compose } from 'redux';
-import rootReducer from './store/reducers/rootreducer';
-import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
-import { getFirestore, reduxFirestore } from 'redux-firestore';
-import { getFirebase, reactReduxFirebase } from 'react-redux-firebase';
-import Firestore from './firebase/Firestore';
 
 require('dotenv').config();
-
-const store = createStore(
-  rootReducer,
-  compose(
-    applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
-    reduxFirestore(Firestore),
-    reactReduxFirebase(Firestore)
-  )
-);
 
 class App extends Component {
   constructor() {
@@ -70,9 +54,4 @@ class App extends Component {
   }
 }
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));

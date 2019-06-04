@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../img/contact-bg.jpg';
-import { newContact } from '../store/actions/contactActions';
-import { connect } from 'react-redux';
+import firebase from '../firebase/Firestore';
 
 class Contact extends Component {
   constructor() {
@@ -17,6 +16,13 @@ class Contact extends Component {
     };
   }
 
+  handleFadeout = () => {
+    setTimeout(() => {
+      let div = document.getElementById('alert');
+      div.classList.add('fade-out');
+    }, 3000);
+  };
+
   handleChange = e => {
     this.setState({
       [e.target.id]: e.target.value
@@ -31,8 +37,14 @@ class Contact extends Component {
         error: 'Please enter your name or a valid email address.'
       });
     } else {
-      this.props
-        .newContact(this.state)
+      let db = firebase.firestore();
+      db.collection('contact-submissions')
+        .add({
+          name: this.state.name,
+          email: this.state.email,
+          message: this.state.message,
+          dateSubmitted: new Date()
+        })
         .then(res => {
           console.log('Wheeeeeeeeeee! It sent!');
           this.setState({
@@ -69,9 +81,10 @@ class Contact extends Component {
       );
     } else if (this.state.success) {
       return (
-        <div id="alert" className="message-alert fade-out">
+        <div id="alert" className="message-alert">
           <div className="chip message-success">
             {this.state.success}
+            {this.handleFadeout()}
             <i className="far fa-times-circle close" />
           </div>
         </div>
@@ -145,13 +158,4 @@ class Contact extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    newContact: contact => dispatch(newContact(contact))
-  };
-};
-
-export default connect(
-  null,
-  mapDispatchToProps
-)(Contact);
+export default Contact;
