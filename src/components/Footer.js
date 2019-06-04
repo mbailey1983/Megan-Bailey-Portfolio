@@ -3,14 +3,14 @@ import React from 'react';
 const Footer = () => {
   return (
     <div>
-      <footer class="page-footer black">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m8 l6">
-              <h5 data-text="Credits" class="glitch white-text">
+      <footer className="page-footer black">
+        <div className="container">
+          <div className="row">
+            <div className="col s12 m8 l6">
+              <h5 data-text="Credits" className="glitch white-text">
                 Credits
               </h5>
-              <ul class="grey-text text-lighten-4">
+              <ul className="grey-text text-lighten-4">
                 <li>
                   Glitch Text{' '}
                   <a href="https://codepen.io/cipherbeta" target="_blank" rel="noopener noreferrer">
@@ -29,8 +29,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="col s12 m4 l6">
-              <h5 data-text="See the Code" class="glitch white-text">
+            <div className="col s12 m4 l6">
+              <h5 data-text="See the Code" className="glitch white-text">
                 See the Code
               </h5>
               <button
@@ -42,9 +42,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="footer-copyright">
-          <div class="container center-align">
-            <p white-text>&copy; {new Date().getFullYear()}, Megan Bailey</p>
+        <div className="footer-copyright">
+          <div className="container center-align">
+            <p className="white-text">&copy; {new Date().getFullYear()}, Megan Bailey</p>
           </div>
         </div>
       </footer>

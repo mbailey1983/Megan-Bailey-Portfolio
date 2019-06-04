@@ -15,8 +15,8 @@ class Projects extends Component {
           <div className="container">
             <div className="row">
               <div className="col s12 m6 l3">
-                <div id="html" class="card">
-                  <div class="card-content white-text">
+                <div id="html" className="card">
+                  <div className="card-content white-text">
                     <span className="card-title">HTML5/CSS3 Projects</span>
                     <hr />
                     <ul>
@@ -46,9 +46,9 @@ class Projects extends Component {
               </div>
 
               <div className="col s12 m6 l3">
-                <div id="js" class="card">
-                  <div class="card-content white-text">
-                    <span class="card-title">JavaScript Projects</span>
+                <div id="js" className="card">
+                  <div className="card-content white-text">
+                    <span className="card-title">JavaScript Projects</span>
                     <hr />
                     <ul>
                       <li>
@@ -77,9 +77,9 @@ class Projects extends Component {
               </div>
 
               <div className="col s12 m6 l3">
-                <div id="react" class="card">
-                  <div class="card-content white-text">
-                    <span class="card-title">ReactJS Projects</span>
+                <div id="react" className="card">
+                  <div className="card-content white-text">
+                    <span className="card-title">ReactJS Projects</span>
                     <hr />
                     <ul>
                       <li>
@@ -118,9 +118,9 @@ class Projects extends Component {
               </div>
 
               <div className="col s12 m6 l3">
-                <div id="wp" class="card">
-                  <div class="card-content white-text">
-                    <span class="card-title">WordPress Projects</span>
+                <div id="wp" className="card">
+                  <div className="card-content white-text">
+                    <span className="card-title">WordPress Projects</span>
                     <hr />
                     <ul>
                       <li>
