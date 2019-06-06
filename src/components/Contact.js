@@ -46,7 +46,7 @@ class Contact extends Component {
           dateSubmitted: new Date()
         })
         .then(res => {
-          console.log('Wheeeeeeeeeee! It sent!');
+          console.log('Wheeeeeeeeeee! It sent!', docRef);
           this.setState({
             success: "You're message is on it's way!",
             error: ''
