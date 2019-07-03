@@ -153,7 +153,7 @@ class Projects extends Component {
 
             <div className="row">
               <div className="container">
-                <div className="col s12 m6 l6">
+                <div className="col s12 m4 l3">
                   <div className="card cert small purple darken-4">
                     <div className="card-content">
                       <span className="card-title grey-text text-lighten-3">
@@ -178,7 +178,7 @@ class Projects extends Component {
                   </div>
                 </div>
 
-                <div className="col s12 m6 l6">
+                <div className="col s12 m4 l3">
                   <div className="card cert small purple darken-4">
                     <div className="card-content">
                       <span className="card-title grey-text text-lighten-3">
@@ -195,6 +195,32 @@ class Projects extends Component {
                       <a
                         target="_blank"
                         href="https://www.freecodecamp.org/certification/meganb1983/javascript-algorithms-and-data-structures"
+                        rel="noopener noreferrer"
+                        className="btn purple accent-3"
+                      >
+                        See the Certificate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col s12 m4 l3">
+                  <div className="card cert small purple darken-4">
+                    <div className="card-content">
+                      <span className="card-title grey-text text-lighten-3">
+                        JavaScript Front-End Libraries Certification
+                      </span>
+                      <hr />
+                      <p className="project">
+                        <strong>Date Completed:</strong> June 13, 2019
+                      </p>
+                      <p className="project">
+                        <strong>Awarded By:</strong> FreeCodeCamp
+                      </p>
+
+                      <a
+                        target="_blank"
+                        href="https://www.freecodecamp.org/certification/meganb1983/front-end-libraries"
                         rel="noopener noreferrer"
                         className="btn purple accent-3"
                       >
