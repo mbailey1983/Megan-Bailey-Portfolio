@@ -152,7 +152,7 @@ class Projects extends Component {
             </div>
 
             <div className="row">
-              <div className="col s12 m4 l3">
+              <div className="col s12 m4">
                 <div className="card cert small purple darken-4">
                   <div className="card-content">
                     <span className="card-title grey-text text-lighten-3">
@@ -177,7 +177,7 @@ class Projects extends Component {
                 </div>
               </div>
 
-              <div className="col s12 m4 l3">
+              <div className="col s12 m4">
                 <div className="card cert small purple darken-4">
                   <div className="card-content">
                     <span className="card-title grey-text text-lighten-3">
@@ -203,7 +203,7 @@ class Projects extends Component {
                 </div>
               </div>
 
-              <div className="col s12 m4 l3">
+              <div className="col s12 m4">
                 <div className="card cert small purple darken-4">
                   <div className="card-content">
                     <span className="card-title grey-text text-lighten-3">
