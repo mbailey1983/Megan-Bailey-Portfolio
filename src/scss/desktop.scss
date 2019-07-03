@@ -251,6 +251,10 @@ footer .glitch {
   @include animation(glitchout 0.5s linear both);
 }
 
+.skillbtn {
+  z-index: 3;
+}
+
 /* Forms Styling */
 
 .contact-form {

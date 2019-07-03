@@ -76,7 +76,7 @@ const Skills = props => {
           <div className="chip purple accent-3 black-text">Asana</div>
         </div>
         <div className="col s8 offset-s1 m5 offset-m3 l4 offset-l1">
-          <button onClick={props.handleSwap} className="btn purple accent-3 waves-effect">
+          <button onClick={props.handleSwap} className="btn purple accent-3 waves-effect skillbtn">
             My Bio
           </button>
         </div>
