@@ -228,10 +228,12 @@ footer .glitch {
 
 #bio.glitchin {
   @include animation(glitchin 0.9s linear 1s both);
+  z-index: 2;
 }
 
 #bio.glitchout {
   @include animation(glitchout 0.5s linear both);
+  z-index: 0;
 }
 
 /*  Slide In/Out Skills */
