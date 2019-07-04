@@ -23,7 +23,7 @@ class App extends Component {
     this.M = window.M;
   }
 
-  componentWillMount() {
+  componentDidMount() {
     var elems = document.querySelectorAll('.scrollspy');
     M.ScrollSpy.init(elems);
   }
