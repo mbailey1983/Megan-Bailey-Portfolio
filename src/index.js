@@ -18,6 +18,13 @@ class App extends Component {
     this.state = {
       loading: true
     };
+
+    this.M = window.M;
+  }
+
+  componentWillMount() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems);
   }
 
   handleSpinnerTimeout = () => {
