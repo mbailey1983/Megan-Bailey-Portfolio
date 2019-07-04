@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { RingLoader } from 'react-spinners';
 import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css';
 
 require('dotenv').config();
 
