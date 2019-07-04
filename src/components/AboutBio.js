@@ -36,7 +36,7 @@ const Bio = props => {
             <i className="fab fa-5x fa-github" />
           </button>
         </div>
-        <div className="col s12 m8 offset-m1 l4 offset-l1">
+        <div className="col s12 m9 offset-m1 l5 offset-l1">
           <button onClick={props.handleSwap} className="btn purple accent-3 waves-effect">
             My Current Skills
           </button>
