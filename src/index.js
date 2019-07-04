@@ -25,7 +25,7 @@ class App extends Component {
 
   componentWillMount() {
     var elems = document.querySelectorAll('.scrollspy');
-    var instances = M.ScrollSpy.init(elems);
+    M.ScrollSpy.init(elems);
   }
 
   handleSpinnerTimeout = () => {
