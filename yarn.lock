@@ -7227,10 +7227,10 @@ node-releases@^1.1.13, node-releases@^1.1.21:
   dependencies:
     semver "^5.3.0"
 
-node@8:
-  version "8.16.0"
-  resolved "https://registry.yarnpkg.com/node/-/node-8.16.0.tgz#9516b2536d28713aeed50ff96bc0216cd5fd000e"
-  integrity sha512-V6OU86x4Tx0osJ+6USJZ1bYvifdXOukCMuXjDEFqGr4KiGMK71HF2jVvSav8BMiZ7HpgZ1XdilzLk1TUaFF5Uw==
+node@12:
+  version "12.7.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-12.7.0.tgz#bf6ecdc7ba033adce620fed1712dd6d45464221e"
+  integrity sha512-j97lH4j6yFr6RFiJ54QtW8C9mS3ZhgcZQNDM3QbLzGwI2FGa5HqyjAFwRnUTtxBTQjwfANpTLg2UiufbcuG6lQ==
   dependencies:
     node-bin-setup "^1.0.0"
 
