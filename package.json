@@ -15,7 +15,8 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.0.1",
     "react-spinners": "^0.5.4",
-    "sass": "^1.20.1"
+    "sass": "^1.20.1",
+    "snyk": "^1.193.1"
   },
   "devDependencies": {
     "dotenv": "^8.0.0",
@@ -28,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "watch": "sass --watch src/scss/index.scss:public/css/index.css",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": [
@@ -74,5 +77,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "snyk": true
 }
