@@ -852,11 +852,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.0", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
   integrity sha512-28QvEGyQyNkB0/m2B4FU7IEZGK2NUrcMtT6BZEFALTguLk+AUT6ofsHtPk5QyjAdUkpMJ+/Em+quwz4HOt30AQ==
-
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -7787,9 +7786,9 @@ node-releases@^1.1.13, node-releases@^1.1.21:
     semver "^5.3.0"
 
 node@12:
-  version "12.7.0"
-  resolved "https://registry.yarnpkg.com/node/-/node-12.7.0.tgz#bf6ecdc7ba033adce620fed1712dd6d45464221e"
-  integrity sha512-j97lH4j6yFr6RFiJ54QtW8C9mS3ZhgcZQNDM3QbLzGwI2FGa5HqyjAFwRnUTtxBTQjwfANpTLg2UiufbcuG6lQ==
+  version "12.8.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-12.8.0.tgz#2c6262da20e07d8283813d87ba8b7b3a1af674d8"
+  integrity sha512-ipGOXF4pBfDHJ0VBDmQoXxngQuHgYfurQY8ZHmzQ4g3VdeFm6zDktv27AUD24d+njNygXjouMMNTA87DJeSO/g==
   dependencies:
     node-bin-setup "^1.0.0"
 
@@ -9617,7 +9616,7 @@ react-scripts@^3.0.1:
   optionalDependencies:
     fsevents "2.0.6"
 
-react-spinners@^0.5.13:
+react-spinners@^0.5.4:
   version "0.5.13"
   resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.5.13.tgz#09da41ee6b321083ff9670cbf78e11effb3feb87"
   integrity sha512-zrQTWlyhqs+3nQ4Zpg19eW4elYQgrrvu0fXL1tIP3CKgLBxkO+rmXdL8l34qTHrpDZnukMFGLxyqQebijeVSJA==
