@@ -16,7 +16,7 @@
     "react-scripts": "^3.0.1",
     "react-spinners": "^0.5.4",
     "sass": "^1.22.9",
-    "snyk": "^1.193.1"
+    "snyk": "^1.216.4"
   },
   "devDependencies": {
     "dotenv": "^8.0.0",
