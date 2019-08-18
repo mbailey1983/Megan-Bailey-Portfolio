@@ -59,6 +59,11 @@ const Skills = props => {
           <div className="chip purple accent-3 black-text">ReactJS</div>
           <div className="chip purple accent-3 black-text">Bootstrap</div>
           <div className="chip purple accent-3 black-text">MaterializeCSS</div>
+          <div className="chip purple accent-3 black-text">D3.js</div>
+          <div className="chip purple accent-3 black-text">Express</div>
+          <div className="chip purple accent-3 black-text">APIs</div>
+          <div className="chip purple accent-3 black-text">Helmet.js</div>
+          <div className="chip purple accent-3 black-text">MongoDB</div>
           <div className="chip purple accent-3 black-text">Yarn</div>
           <div className="chip purple accent-3 black-text">Github</div>
         </div>
