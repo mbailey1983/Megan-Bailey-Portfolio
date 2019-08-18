@@ -12,8 +12,10 @@
     "nodemailer": "^6.3.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1",
+    "react-materialize": "^3.3.4",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "^3.0.1",
+    "react-scroll": "^1.7.13",
     "react-spinners": "^0.5.4",
     "sass": "^1.22.9",
     "snyk": "^1.193.1"
@@ -77,6 +79,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "snyk": true
+  }
 }

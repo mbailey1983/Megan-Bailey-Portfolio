@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import { Router, Link } from 'react-router-dom'
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 class Nav extends Component {
   render() {
@@ -9,24 +10,56 @@ class Nav extends Component {
           <div className="right-sidebar">
             <ul>
               <li>
-                <a href="#home" className="btn-floating waves-effect purple accent-3">
+                <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  className="btn-floating waves-effect purple accent-3"
+                >
                   <i className="medium material-icons">home</i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="btn-floating waves-effect purple accent-3">
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  className="btn-floating waves-effect purple accent-3"
+                >
                   <i className="fas fa-3x fa-info" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#projects" className="btn-floating waves-effect purple accent-3">
+                <Link
+                  activeClass="active"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  className="btn-floating waves-effect purple accent-3"
+                >
                   <i className="medium material-icons">work_outline</i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="btn-floating waves-effect purple accent-3">
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  className="btn-floating waves-effect purple accent-3"
+                >
                   <i className="medium material-icons">email</i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

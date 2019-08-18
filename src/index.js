@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { RingLoader } from 'react-spinners';
 import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/js/materialize.min.js';
 import M from 'materialize-css';
 
 require('dotenv').config();
@@ -24,8 +25,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    var elems = document.querySelectorAll('.scrollspy');
-    M.ScrollSpy.init(elems);
+    M.AutoInit();
   }
 
   handleSpinnerTimeout = () => {
