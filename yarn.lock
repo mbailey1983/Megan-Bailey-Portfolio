@@ -6813,8 +6813,8 @@ node-releases@^1.1.25:
     semver "^5.3.0"
 
 node@12:
-  version "12.8.1"
-  resolved "https://registry.yarnpkg.com/node/-/node-12.8.1.tgz#037af95afc8d08532d8797c3ab573310221fefa2"
+  version "12.9.1"
+  resolved "https://registry.yarnpkg.com/node/-/node-12.9.1.tgz#759148307d1671d5baabc1f66d3aeb010b7321a6"
   dependencies:
     node-bin-setup "^1.0.0"
 
