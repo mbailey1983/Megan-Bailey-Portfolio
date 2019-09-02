@@ -8359,9 +8359,9 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
 
-react-materialize@^3.3.4:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/react-materialize/-/react-materialize-3.3.4.tgz#9f0e1b02df207819c2d455b649fcdb1ee29a63a4"
+react-materialize@^3.3.5:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/react-materialize/-/react-materialize-3.3.5.tgz#009d22ceee618a0b98946b89e8b3ac9b77730773"
   dependencies:
     classnames "^2.2.5"
     react "^16.8.5"
