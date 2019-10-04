@@ -1588,3 +1588,8 @@ patch:
   'npm:lodash:20180130':
     - docker > dox > jsdoctypeparser > lodash:
         patched: '2019-07-13T06:39:53.808Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T06:23:43.519Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T06:23:43.519Z'
