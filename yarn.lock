@@ -8943,9 +8943,9 @@ sass-loader@7.2.0:
     pify "^4.0.1"
     semver "^5.5.0"
 
-sass@^1.22.9:
-  version "1.22.10"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.22.10.tgz#b9f01440352ba0be5d99fa64a2040b035cc6e5ff"
+sass@^1.24.3:
+  version "1.24.3"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.24.3.tgz#ee2ced4953e79343da0d54d96d6e6e1af6d44290"
   dependencies:
     chokidar ">=2.0.0 <4.0.0"
 
