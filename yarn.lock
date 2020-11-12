@@ -726,7 +726,7 @@
     "@emotion/utils" "0.11.2"
     "@emotion/weak-memoize" "0.2.3"
 
-"@emotion/core@^10.0.14", "@emotion/core@^10.0.15":
+"@emotion/core@^10.0.15":
   version "10.0.16"
   resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.16.tgz#e43630b65c84e31e81f34db3286eab584b08cfaa"
   dependencies:
@@ -736,6 +736,10 @@
     "@emotion/serialize" "^0.11.9"
     "@emotion/sheet" "0.9.3"
     "@emotion/utils" "0.11.2"
+
+"@emotion/core@^11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-11.0.0.tgz#d075867e07864119de7cfd5268c15012bd2d6290"
 
 "@emotion/css@^10.0.14":
   version "10.0.14"
