@@ -18,7 +18,7 @@
     "react-scroll": "^1.7.13",
     "react-spinners": "^0.6.1",
     "sass": "^1.22.9",
-    "snyk": "^1.193.1"
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "dotenv": "^8.0.0",
@@ -32,8 +32,8 @@
     "test": "react-scripts test",
     "watch": "sass --watch src/scss/index.scss:public/css/index.css",
     "eject": "react-scripts eject",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "snyk-protect": "snyk-protect",
+    "prepublish": "yarn run snyk-protect"
   },
   "eslintConfig": {
     "extends": [
@@ -79,5 +79,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "snyk": true
 }
