@@ -71,6 +71,7 @@ const Skills = props => {
           <h3 className="pink-text accent-3">Software</h3>
           <div className="chip purple accent-3 black-text">Adobe Photoshop</div>
           <div className="chip purple accent-3 black-text">Adobe Indesign</div>
+          <div className="chip purple accent-3 black-text">Adobe Premeier</div>
           <div className="chip purple accent-3 black-text">Invision</div>
         </div>
         <div className="row">
