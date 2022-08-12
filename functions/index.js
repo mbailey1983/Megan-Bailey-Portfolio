@@ -28,7 +28,7 @@ exports.contact = functions.firestore
     try {
       transporter.sendMail({
         from: `"${name}" <${email}>`,
-        to: `"Megan Bailey" <megan@rockstarcreativestudio.com>`,
+        to: `"Megan Bailey" <meganpgbailey@gmail.com>`,
         subject: 'New Contact Form Submission from Portfolio Website',
         html: `New contact submission from the portfolio website.<br>\
       Name: ${name}<br>\
