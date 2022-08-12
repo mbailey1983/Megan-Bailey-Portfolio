@@ -26,3 +26,4 @@ yarn-error.log*
 /util
 /.firebase
 GitHub.vscode-pull-request-github-0.49.2022081109.vsix
+.vscode/settings.json
